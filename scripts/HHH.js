@@ -2,6 +2,7 @@ import { Hotdogs } from "./Hotdogs.js"
 import { Drinks } from "./Drinks.js" 
 import { Desserts } from "./Desserts.js"
 import { Locations } from "./Locations.js"
+// import { Orders } from "./Orders.js"
 
 export const HHH = () => {
     return `
@@ -23,6 +24,9 @@ export const HHH = () => {
                 <h2 class="hotdog">Placeholder hotdog</h2>
                 <h2 class="drink">Placeholder drink</h2>
                 <h2 class="dessert">Placeholder dessert</h2>
+            </section>
+            <section class="col-12 receipt">
+            <p><span class="orderReceipt"></span></p> 
             </section>
         </div>
     `
