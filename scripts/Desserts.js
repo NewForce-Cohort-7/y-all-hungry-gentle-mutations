@@ -22,6 +22,6 @@ export const Desserts = () => {
 
     html += listItems.join("")
 
-    html += "</select>"
+    html += "</select></br>"
     return html
 }

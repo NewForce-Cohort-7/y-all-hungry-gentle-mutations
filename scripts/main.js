@@ -1,6 +1,6 @@
 import { HHH } from "./HHH.js"
 
-const mainContainer = document.querySelector("#container")
+const mainContainer = document.querySelector(".container")
 
 const renderAllHTML = () => {
     mainContainer.innerHTML = HHH()

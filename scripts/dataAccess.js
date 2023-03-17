@@ -13,6 +13,10 @@ export const getDesserts = () => {
     return database.desserts.map(dessert => ({ ...dessert }))
 }
 
+export const getOrders = () => {
+    return database.customOrders.map(order => ({...order}))
+}
+
 // getLocation export 
 export const getLocations = () => {
     return database.locations.map(location => ({ ...location }))
@@ -50,10 +54,11 @@ export const setLocations = (id) => {
 export const updateHotDogSelection = () => {
     console.log(database.orderBuilder);
     
-    let orderHotdog = document.querySelector("h2.hotdog");
+    let orderHotdog = document.querySelector("span.hotdog");
     let hotdogData = database.hotdogs.find((hotdog) => { return hotdog.id === database.orderBuilder.hotdogId });
 
-    orderHotdog.innerHTML = `name: ${hotdogData.name} some img url: ${hotdogData.img}`;
+    orderHotdog.innerHTML = `<span>${hotdogData.name}</span>
+    <p>${hotdogData.description}</p>`;
 
 }
 
@@ -61,20 +66,22 @@ export const updateHotDogSelection = () => {
 export const updateDrinkSelection = () => {
     console.log(database.orderBuilder);
 
-    let orderDrink = document.querySelector("h2.drink");
+    let orderDrink = document.querySelector("span.drink");
     let drinkData = database.drinks.find((drink) => { return drink.id === database.orderBuilder.drinkId });
 
-    orderDrink.innerHTML = `name: ${drinkData.name} some img url: ${drinkData.img}`;
+    orderDrink.innerHTML = `<p>${drinkData.name}</p>`;
+
 }
-    
+
 // dessert 
 export const updateDessertSelection = () => {
     console.log(database.orderBuilder);
 
-    let orderDessert = document.querySelector("h2.dessert");
+    let orderDessert = document.querySelector("span.dessert");
     let dessertData = database.desserts.find((dessert) => { return dessert.id === database.orderBuilder.dessertId });
 
-    orderDessert.innerHTML = `name: ${dessertData.name} some img url: ${dessertData.img}`;   
+    orderDessert.innerHTML = `<span>${dessertData.name}</span>
+    <p>${dessertData.description}</p> `;   
 }
 
 // location selection 
@@ -84,14 +91,30 @@ export const updateLocation = () => {
     let locationOption = document.querySelector(".locationName");
     let locationData = database.locations.find((location) => { return location.id === database.orderBuilder.locationId });
 
-    locationOption.innerHTML = `You have selected our ${locationData.name} foodtruck located at ${locationData.address}.`;   
+    locationOption.innerHTML = `
+    You have selected our <strong>${locationData.name}</strong> foodtruck located at </br> ${locationData.address}.
+    
+    `  
 }
 
 // orderBuilder
-export const completeOrder = () => {
+export const addCustomOrder = () => {
+    // Copy the current state of user choices
+    const newOrder = {...database.orderBuilder}
 
-    // Broadcast custom event to entire documement so that the
-    // application can re-render and update state
+    // Add a new primary key to the object
+    const lastIndex = database.customOrders.length 
+    newOrder.id = lastIndex + 1
+
+    // Add a timestamp to the order
+    newOrder.timestamp = Date.now()
+
+    // Add the new order object to custom orders state
+    database.customOrders.push(newOrder)
+
+    // Reset the temporary state for user choices
+    database.orderBuilder = {}
+
+    // Broadcast a notification that permanent state has changed
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }
-//
