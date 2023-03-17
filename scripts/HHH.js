@@ -1,5 +1,5 @@
 import { Hotdogs } from "./Hotdogs.js"
-// import for drinks
+import { Drinks } from "./Drinks.js" 
 import { Desserts } from "./Desserts.js"
 import { Locations } from "./Locations.js"
 
@@ -16,7 +16,7 @@ export const HHH = () => {
             <section class="col-4 menu">
             <h2>Menu</h2>
             ${Hotdogs()}
-
+            ${Drinks()}
             ${Desserts()}
             </section>
             <section class="col-8 order">
