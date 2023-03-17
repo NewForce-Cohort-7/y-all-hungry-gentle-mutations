@@ -13,6 +13,11 @@ export const getDesserts = () => {
     return database.desserts.map(dessert => ({ ...dessert }))
 }
 
+// getLocation export 
+export const getLocations = () => {
+    return database.locations.map(location => ({ ...location }))
+}
+
 
 // set* functions 
 export const setHotDogs = (id) => {
@@ -30,16 +35,21 @@ export const setDesserts = (id) => {
     updateDessertSelection();
 }
 
-// setLocation export  
-export const setLocation = (locationId) => {
-    database.transientState.selectedLocation = locationId
-    document.dispatchEvent(new CustomEvent("stateChanged"))
+export const setLocations = (id) => {
+    database.orderBuilder.locationId = id;
+    updateLocation();
 }
 
+// // setLocation export  
+// export const setLocationChoice = (locationId) => {
+//     database.transientState.selectedLocation = locationId
+//     document.dispatchEvent(new CustomEvent("stateChanged"))
+// }
+
+// hot doggos
 export const updateHotDogSelection = () => {
     console.log(database.orderBuilder);
-    // document.querySelector("h2.hotdog").textContent = `hotdog id: ${database.orderBuilder.hotdogId}`;
-    // hot doggos
+    
     let orderHotdog = document.querySelector("h2.hotdog");
     let hotdogData = database.hotdogs.find((hotdog) => { return hotdog.id === database.orderBuilder.hotdogId });
 
@@ -47,26 +57,34 @@ export const updateHotDogSelection = () => {
 
 }
 
+// drinks 
 export const updateDrinkSelection = () => {
     console.log(database.orderBuilder);
-    // drinks 
+
     let orderDrink = document.querySelector("h2.drink");
     let drinkData = database.drinks.find((drink) => { return drink.id === database.orderBuilder.drinkId });
 
     orderDrink.innerHTML = `name: ${drinkData.name} some img url: ${drinkData.img}`;
 }
     
+// dessert 
 export const updateDessertSelection = () => {
+    console.log(database.orderBuilder);
+
     let orderDessert = document.querySelector("h2.dessert");
     let dessertData = database.desserts.find((dessert) => { return dessert.id === database.orderBuilder.dessertId });
 
     orderDessert.innerHTML = `name: ${dessertData.name} some img url: ${dessertData.img}`;   
 }
 
+// location selection 
+export const updateLocation = () => {
+    console.log(database.orderBuilder);
+    
+    let locationOption = document.querySelector(".locationName");
+    let locationData = database.locations.find((location) => { return location.id === database.orderBuilder.locationId });
 
-// getLocation export 
-export const getLocations = () => {
-    return database.getLocations.map(f => ({ ...f }))
+    locationOption.innerHTML = `You have selected our ${locationData.name} foodtruck located at ${locationData.address}.`;   
 }
 
 // orderBuilder
