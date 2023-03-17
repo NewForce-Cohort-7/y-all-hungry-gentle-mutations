@@ -1,8 +1,7 @@
 import { Hotdogs } from "./Hotdogs.js"
 // import for drinks
 import { Desserts } from "./Desserts.js"
-
-
+import { Locations } from "./Locations.js"
 
 export const HHH = () => {
     return `
@@ -10,6 +9,8 @@ export const HHH = () => {
         <div class="row">
             <section class="col-12">
                 <p>Choose a location to pick up your order</p>
+                ${Locations()}
+                <p><span class="locationName"></span></p>
             </section>
         <div class="row">
             <section class="col-4 menu">

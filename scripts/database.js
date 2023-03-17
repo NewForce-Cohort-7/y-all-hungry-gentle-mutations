@@ -24,6 +24,11 @@ export const database = {
         { id: 4, name: "Fruit Salad", description: "Seasonal fruit salad (whipped topping optional)", img: 'https://veganinthefreezer.com/wp-content/uploads/2021/08/Summer-Fruit-Salad-17-720x480.jpg', price: 2.00 },
         { id: 5, name: "Soft Serve on a Cone", description: "Vanilla, chocolate, or strawberry soft serve icecream housed in a waffle cone", img: 'https://i.ebayimg.com/images/g/iGkAAOSwwSlgZG2W/s-l1600.jpg', price: 2.00 }
     ],
+    locations: [
+        { id: 1, name: "Morgantown, WV", address: "13 High St, Morgantown, WV 26505" },
+        { id: 2, name: "Fairmont, WV", address: "7 Locust Ave, Fairmont, WV 26554" },
+        { id: 3, name: "Charleston, WV", address: "800 Smith St, Charleston, WV 25301" }
+    ],
     customOrders: []
 }
 
