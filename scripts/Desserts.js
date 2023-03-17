@@ -14,14 +14,14 @@ const desserts = getDesserts()
 document.addEventListener(
     "change",
     (event) => {
-        if (event.target.name === "desserts") {
+        if (event.target.name === "dessert") {
             setDesserts(parseInt(event.target.value))
         }
     }
 )
 
 export const Desserts = () => {
-    let html = "<select name='desserts'><option value='menuChoice'>Select a dessert</option>"
+    let html = "<select name='dessert'><option value='menuChoice'>Select a dessert</option>"
 
     // Use .map() for converting objects to <li> elements
     const listItems = desserts.map(dessert => {

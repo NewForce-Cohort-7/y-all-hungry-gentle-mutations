@@ -17,17 +17,17 @@ export const getDesserts = () => {
 // set* functions 
 export const setHotDogs = (id) => {
     database.orderBuilder.hotdogId = id;
-    updateMenuDisplay();
+    updateHotDogSelection();
 }
 
 export const setDrinks = (id) => {
     database.orderBuilder.drinkId = id;
-    updateMenuDisplay();
+    updateDrinkSelection();
 }
 
 export const setDesserts = (id) => {
     database.orderBuilder.dessertId = id;
-    updateMenuDisplay();
+    updateDessertSelection();
 }
 
 // setLocation export  
@@ -36,19 +36,31 @@ export const setLocation = (locationId) => {
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }
 
-export const updateMenuDisplay = () => {
+export const updateHotDogSelection = () => {
     console.log(database.orderBuilder);
     // document.querySelector("h2.hotdog").textContent = `hotdog id: ${database.orderBuilder.hotdogId}`;
+    // hot doggos
     let orderHotdog = document.querySelector("h2.hotdog");
     let hotdogData = database.hotdogs.find((hotdog) => { return hotdog.id === database.orderBuilder.hotdogId });
 
     orderHotdog.innerHTML = `name: ${hotdogData.name} some img url: ${hotdogData.img}`;
 
+}
+
+export const updateDrinkSelection = () => {
+    console.log(database.orderBuilder);
+    // drinks 
     let orderDrink = document.querySelector("h2.drink");
     let drinkData = database.drinks.find((drink) => { return drink.id === database.orderBuilder.drinkId });
 
     orderDrink.innerHTML = `name: ${drinkData.name} some img url: ${drinkData.img}`;
+}
     
+export const updateDessertSelection = () => {
+    let orderDessert = document.querySelector("h2.dessert");
+    let dessertData = database.desserts.find((dessert) => { return dessert.id === database.orderBuilder.dessertId });
+
+    orderDessert.innerHTML = `name: ${dessertData.name} some img url: ${dessertData.img}`;   
 }
 
 
