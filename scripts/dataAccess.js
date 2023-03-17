@@ -94,3 +94,4 @@ export const completeOrder = () => {
     // application can re-render and update state
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }
+//

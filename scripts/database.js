@@ -8,7 +8,6 @@ export const database = {
         { id: 4, name: "Bratwurst Dog", description: "Spicy in-house made bratwurst topped with onions and slaw in a brioche bun", img: 'https://assets.marthastewart.com/styles/wmax-750/d35/wisconsin-beer-brats-0617-102941317/wisconsin-beer-brats-0617-102941317_horiz.jpg?itok=yhnfWLqJ', price: 5.00 },
         { id: 5, name: "Corn Dog", description: "Our take on your favorite state fair food with your choice of toppings", img: 'https://twoplaidaprons.com/wp-content/uploads/2022/04/side-shot-Korean-corn-dog-thumbnail-500x500.jpg', price: 3.00 }
     ],
-
     drinks: [
         { id: 1, name: "Mountain Dew", img: 'https://www.meijer.com/content/dam/meijer/product/0001/20/0000/13/0001200000131_1200.png', price: 1.50 },
         { id: 2, name: "Sprite", img: 'https://cdn.shopify.com/s/files/1/0088/8612/4606/products/chrome_YUAbrmX3em_466x466.png?v=1647897946', price: 1.50 },
