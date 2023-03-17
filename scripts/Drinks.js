@@ -22,6 +22,6 @@ export const Drinks = () => {
 
     html += listItems.join("")
 
-    html += "</select>"
+    html += "</select></br>"
     return html
 }
