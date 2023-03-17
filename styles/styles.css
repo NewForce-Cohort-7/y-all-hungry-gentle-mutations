@@ -1,3 +1,22 @@
 select { 
     margin: 10px 0;
+    width: 200px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.main {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+}
+
+#orderButton { 
+    margin: 10px 0;
+    width: 200px;
 }
