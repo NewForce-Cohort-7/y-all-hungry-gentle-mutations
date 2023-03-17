@@ -1,4 +1,4 @@
-// import for hotdogs
+import { Hotdogs } from "./Hotdogs.js"
 // import for drinks
 import { Desserts } from "./Desserts.js"
 
@@ -14,7 +14,7 @@ export const HHH = () => {
         <div class="row">
             <section class="col-4 menu">
             <h2>Menu</h2>
-
+            ${Hotdogs()}
 
             ${Desserts()}
             </section>
