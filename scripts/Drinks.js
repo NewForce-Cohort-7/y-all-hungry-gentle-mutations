@@ -1,6 +1,6 @@
-import { getHotDogs, setHotDogs } from "./dataAccess.js"
+import { getDrinks, setDrinks } from "./dataAccess.js"
 
-const hotdogs = getHotDogs()
+const drinks = getDrinks()
 
 // document.addEventListener(
 //     "change",
@@ -14,18 +14,18 @@ const hotdogs = getHotDogs()
 document.addEventListener(
     "change",
     (event) => {
-        if (event.target.name === "hotdog") {
-            setHotDogs(parseInt(event.target.value))
+        if (event.target.name === "drink") {
+            setDrinks(parseInt(event.target.value))
         }
     }
 )
 
-export const HotDogs = () => {
-    let html = "<select name='hotdogs'><option value='menuChoice'>Select a hotdog</option>"
+export const Drinks = () => {
+    let html = "<select name='drinks'><option value='menuChoice'>Select a drink</option>"
 
     // Use .map() for converting objects to <li> elements
-    const listItems = hotdogs.map(hotdog => {
-        return `<option value="${hotdog.id}" /> ${hotdog.name}</option>`
+    const listItems = drinks.map(drink => {
+        return `<option value="${drink.id}" /> ${drink.name}</option>`
 
     
     })
