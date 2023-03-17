@@ -42,12 +42,13 @@ export const updateMenuDisplay = () => {
     let orderHotdog = document.querySelector("h2.hotdog");
     let hotdogData = database.hotdogs.find((hotdog) => { return hotdog.id === database.orderBuilder.hotdogId });
 
-    orderHotdog.textContent = hotdogData.name;
-    orderHotdog.innerHTML += `some img url: ${hotdogData.img}`;
-    // document.querySelector("h2.drink").textContent = database.drinks.find((drink) => { return drink.id === database.orderBuilder.drinkId })?.name ?? "drink";
+    orderHotdog.innerHTML = `name: ${hotdogData.name} some img url: ${hotdogData.img}`;
 
-    // console.log(document.querySelector("h2.dessert"));
-    // document.querySelector("h2.dessert").textContent = database.desserts.find((dessert) => { return dessert.id === database.orderBuilder.dessertId })?.name ?? "dessert";
+    let orderDrink = document.querySelector("h2.drink");
+    let drinkData = database.drinks.find((drink) => { return drink.id === database.orderBuilder.drinkId });
+
+    orderDrink.innerHTML = `name: ${drinkData.name} some img url: ${drinkData.img}`;
+    
 }
 
 
