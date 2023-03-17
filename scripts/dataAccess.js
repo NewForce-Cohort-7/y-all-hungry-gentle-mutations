@@ -57,8 +57,21 @@ export const updateHotDogSelection = () => {
     let orderHotdog = document.querySelector("span.hotdog");
     let hotdogData = database.hotdogs.find((hotdog) => { return hotdog.id === database.orderBuilder.hotdogId });
 
-    orderHotdog.innerHTML = `<span>${hotdogData.name}</span>
-    <p>${hotdogData.description}</p>`;
+    orderHotdog.innerHTML = `
+    <div class="card mb-3 food-card" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+        <img src="${hotdogData.img}" class="img-fluid rounded-start" alt="photo of selected hotdog">
+        </div>
+        <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title">${hotdogData.name}</h5>
+            <p class="card-text">${hotdogData.description}</p>
+            <p class="card-text"><small class="text-muted">$${hotdogData.price}</small></p>
+        </div>
+        </div>
+    </div>
+    </div>`;
 
 }
 
@@ -69,7 +82,20 @@ export const updateDrinkSelection = () => {
     let orderDrink = document.querySelector("span.drink");
     let drinkData = database.drinks.find((drink) => { return drink.id === database.orderBuilder.drinkId });
 
-    orderDrink.innerHTML = `<p>${drinkData.name}</p>`;
+    orderDrink.innerHTML = `
+    <div class="card mb-3 food-card" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+        <img src="${drinkData.img}" class="img-fluid rounded-start" alt="photo of selected beverage">
+        </div>
+        <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title">${drinkData.name}</h5>
+            <p class="card-text"><small class="text-muted">$${drinkData.price}</small></p>
+        </div>
+        </div>
+    </div>
+    </div>`;
 
 }
 
@@ -80,8 +106,21 @@ export const updateDessertSelection = () => {
     let orderDessert = document.querySelector("span.dessert");
     let dessertData = database.desserts.find((dessert) => { return dessert.id === database.orderBuilder.dessertId });
 
-    orderDessert.innerHTML = `<span>${dessertData.name}</span>
-    <p>${dessertData.description}</p> `;   
+    orderDessert.innerHTML = `
+    <div class="card mb-3 food-card" style="max-width: 540px;">
+    <div class="row g-0" background-color: >
+        <div class="col-md-4 food-card">
+        <img src="${dessertData.img}" class="img-fluid rounded-start" alt="photo of selected dessert">
+        </div>
+        <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title">${dessertData.name}</h5>
+            <p class="card-text">${dessertData.description}</p>
+            <p class="card-text"><small class="text-muted">$${dessertData.price}</small></p>
+        </div>
+        </div>
+    </div>
+    </div>`;   
 }
 
 // location selection 
