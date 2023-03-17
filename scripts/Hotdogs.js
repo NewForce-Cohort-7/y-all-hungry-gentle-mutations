@@ -14,8 +14,11 @@ const hotdogs = getHotDogs()
 document.addEventListener(
     "change",
     (event) => {
-        if (event.target.name === "hotdog") {
-            setHotDogs(parseInt(event.target.value))
+        console.log("Change event from hotdog listener");
+        console.log(event);
+        if (event.target.name === "hotdogs") {
+            console.log("setting hot dog...");
+            setHotDogs(parseInt(event.target.value));
         }
     }
 )
@@ -27,7 +30,7 @@ export const HotDogs = () => {
     const listItems = hotdogs.map(hotdog => {
         return `<option value="${hotdog.id}" /> ${hotdog.name}</option>`
 
-    
+
     })
 
     // Join all of the strings in the array into a single string

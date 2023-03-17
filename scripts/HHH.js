@@ -17,7 +17,9 @@ export const HHH = () => {
             ${Desserts()}
             </section>
             <section class="col-8 order">
-            <h2>Placeholder</h2>
+                <h2 class="hotdog">Placeholder hotdog</h2>
+                <h2 class="drink">Placeholder drink</h2>
+                <h2 class="dessert">Placeholder dessert</h2>
             </section>
         </div>
     `

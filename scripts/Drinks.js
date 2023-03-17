@@ -14,7 +14,7 @@ const drinks = getDrinks()
 document.addEventListener(
     "change",
     (event) => {
-        if (event.target.name === "drink") {
+        if (event.target.name === "drinks") {
             setDrinks(parseInt(event.target.value))
         }
     }
@@ -27,7 +27,7 @@ export const Drinks = () => {
     const listItems = drinks.map(drink => {
         return `<option value="${drink.id}" /> ${drink.name}</option>`
 
-    
+
     })
 
     // Join all of the strings in the array into a single string
