@@ -100,6 +100,7 @@ export const updateDrinkSelection = () => {
         <div class="col-md-8">
         <div class="card-body">
             <h5 class="card-title">${drinkData.name}</h5>
+            <p class="card-text">${drinkData.description}</p>
             <p class="card-text"><small class="text-muted">$${drinkData.price}</small></p>
         </div>
         </div>
