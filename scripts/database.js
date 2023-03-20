@@ -7,7 +7,7 @@ export const database = {
         { id: 3, name: "The Footlong Hotdog", description: "12 inch hot dog on bun with your choice of toppings", img: 'https://cdn.shopify.com/s/files/1/0033/6376/6339/products/brightleaffootlonghotdog_2048x.jpg?v=1627306960', price: 7.99},
         { id: 4, name: "Corn Dawg", description: "Corndog style vegan hotdog wrapped in a syrupy batter for an all-in-one breakfast!", img: 'https://alittleinsanity.com/wp-content/uploads/2017/04/Gluten-Free-Vegan-Corndog-Recipe-Instagram.jpg', price: 5.00},
         { id: 5, name: "Bratwurst Dog", description: "Spicy in-house made bratwurst topped with onions and slaw in a brioche bun", img: 'https://assets.marthastewart.com/styles/wmax-750/d35/wisconsin-beer-brats-0617-102941317/wisconsin-beer-brats-0617-102941317_horiz.jpg?itok=yhnfWLqJ', price: 5.00 },
-        { id: 6, name: "Corn Dog", description: "Our take on your favorite state fair food with your choice of toppings", img: 'https://twoplaidaprons.com/wp-content/uploads/2022/04/side-shot-Korean-corn-dog-thumbnail-500x500.jpg', price: 3.00 }
+        { id: 6, name: "Corn Dog", description: "Our take on your favorite state fair food with your choice of toppings", img: 'https://twoplaidaprons.com/wp-content/uploads/2022/04/side-shot-Korean-corn-dog-thumbnail-500x500.jpg', price: 3.00 },
     ],
     drinks: [
         { id: 1, name: "[NO DRINK]", img: 'https://i.imgur.com/xeRzvBO.png', price: 0 },

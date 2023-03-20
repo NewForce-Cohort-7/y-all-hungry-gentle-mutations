@@ -1,0 +1,6 @@
+        { id: 7, name: "Bogey Dog", description: "Grilled all beef footlong hot dog with mustard, smoked chili, homemade slaw, and onion", img: 'https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/a460fa2c-0383-4cf5-8d6a-694b6d0f0bc8.jpg', price: 9.00 },
+        { id: 8, name: "Tijuana Dog", description: "Bacon-wrapped footlong hot dog topped with avocade, jalapenos, fresh crema, and pico de gallo", img: 'https://i0.wp.com/grubdelite.com/wp-content/uploads/2018/06/attachment-1-100.jpeg?fit=2727%2C2517&ssl=1', price: 10.00 },
+        { id: 9, name: "Veg Out Dawg", description: "Plant-based hotdog topped with grilled onions, peppers, mustard, and ketchup", img: 'https://images.immediate.co.uk/production/volatile/sites/30/2021/07/Tropical-vegan-hot-dogs-1b1e00e.jpg', price: 4.50 },
+        { id: 10, name: "Canadian Dog", description: "A hotdog and bun topped with fries and cheese, soaked in gravy", img: 'https://i.imgur.com/pSdfxGR.png', price: 8.00, },
+        { id: 11, name: "Mothman Dog", description: "Topped with blue cheese, buffalo sauce, and jalapenos", img: 'https://i.imgur.com/wvYH0Il.jpg', price: 12.00  },
+        { id: 12, name: "Governor J.J.'s Baby Dog", description: , img: '', price:  },
