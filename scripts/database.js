@@ -23,7 +23,10 @@ export const database = {
         { id: 4, name: "Coke", img: 'https://scene7.samsclub.com/is/image/samsclub/0004900002468_B?wid=400&hei=400', price: 1.50 },
         { id: 5, name: "Sweet Tea", img: 'https://sugarspunrun.com/wp-content/uploads/2022/05/Easy-sweet-tea-recipe-4-of-6.jpg', price: 1.50 },
         { id: 6, name: "Blackberry Lemonade", img: 'https://i0.wp.com/saygraceblog.com/wp-content/uploads/2016/06/Summer-Blackberry-Lemonade.jpg?w=667&ssl=1', price: 1.75 },
-        { id: 7, name: "Water", img: 'https://m.media-amazon.com/images/I/81BeAomXzOL._SY445_.jpg', price: 1.00 }
+        { id: 7, name: "Water", img: 'https://m.media-amazon.com/images/I/81BeAomXzOL._SY445_.jpg', price: 1.00 },
+        { id: 8, name: "Appalachian Appletini", img: 'https://amandascookin.com/wp-content/uploads/2020/04/appletini-cocktail-recipe-RC-600x600.jpg', price: 3.00},
+        { id: 9, name: "Bubble Bubble Trouble", img: 'https://www.sugarhero.com/wp-content/uploads/2020/10/witches-brew-halloween-punch-10.jpg', price: 4.00},
+        { id: 10, name: "The State Senator", img: 'https://creative-culinary.com/wp-content/uploads/blackberry-gin-sling-1.jpg', price: 3.50}
     ],
     desserts: [
         { id: 1, name: "[NO DESSERT]", description: "You will not receive a dessert.", img: 'https://i.imgur.com/xeRzvBO.png', price: 0 },
@@ -31,7 +34,10 @@ export const database = {
         { id: 3, name: "Caramel Sundae", description: "Chocolate ice cream drizzled with caramel sauce", img: 'https://icecreamfromscratch.com/wp-content/uploads/2022/09/Caramel-Sundae-1.2-735x1103.jpg', price: 3.00 },
         { id: 4, name: "Hot Fudge Sundae", description: "Vanilla ice cream topped with our secret chocolate sauce", img: 'https://preppykitchen.com/wp-content/uploads/2021/04/Hot-Fudge-Sundae-Feature.jpg', price: 3.00 },
         { id: 5, name: "Fruit Salad", description: "Seasonal fruit salad (whipped topping optional)", img: 'https://veganinthefreezer.com/wp-content/uploads/2021/08/Summer-Fruit-Salad-17-720x480.jpg', price: 2.00 },
-        { id: 6, name: "Soft Serve on a Cone", description: "Vanilla, chocolate, or strawberry soft serve icecream housed in a waffle cone", img: 'https://i.ebayimg.com/images/g/iGkAAOSwwSlgZG2W/s-l1600.jpg', price: 2.00 }
+        { id: 6, name: "Soft Serve on a Cone", description: "Vanilla, chocolate, or strawberry soft serve icecream housed in a waffle cone", img: 'https://i.ebayimg.com/images/g/iGkAAOSwwSlgZG2W/s-l1600.jpg', price: 2.00},
+        { id: 7, name: "Mountaineer Mugcake", description: "brownie in souvenier mug!", img: 'https://www.shutterstock.com/image-vector/empty-placeholder-image-icon-design-600w-1366372628.jpg', price: 6.00},
+        { id: 8, name: "The Veggieman", description: "vegan meringue", img: 'https://nexttrip.info/up_load_files/779/photo04.jpg', price: 5.00},
+        { id: 9, name: "The Snowshoe", description: "Shaved ice topped with our fruit salad and honey", img: 'https://nexttrip.info/up_load_files/779/photo04.jpg', price: 5.00}
     ],
     happyToys: [
         { id: 1, name: "[NO HAPPY TOY]", description: "You will not receive a Happy Toy.", img: "https://i.imgur.com/xeRzvBO.png", price: 0 },
@@ -70,6 +76,16 @@ export const database = {
         { id: 23, locationId: 3, hotdogId: 6 },
         { id: 24, locationId: 3, hotdogId: 12 },
         { id: 25, locationId: 3, hotdogId: 13 },
+    ],
+    drinkLocations : [
+        { id: 1, locationId: 1, drinkId: 8 },
+        { id: 2, locationId: 2, drinkId: 9 },
+        { id: 3, locationId: 3, drinkId: 10 }
+    ],
+    dessertLocations : [
+        {id: 1, locationId: 1, dessertId: 7},
+        {id: 2, locationId: 2, dessertId: 8},
+        {id: 3, locationId: 3, dessertId: 9}
     ],
     customOrders: []
 }
