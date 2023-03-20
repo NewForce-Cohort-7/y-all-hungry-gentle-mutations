@@ -13,7 +13,7 @@ document.addEventListener(
 
 export const Hotdogs = () => {
     let html = "<select name='hotdogs'><option value='menuChoice'>Select a hotdog</option>"
-// database.orderBuilder.locationId
+
     // Use .map() for converting objects to <li> elements
     const listItems = hotdogs.map(hotdog => {
         return `<option value="${hotdog.id}" /> ${hotdog.name}</option>`
@@ -28,14 +28,4 @@ export const Hotdogs = () => {
     return html
 }
 
-/* 
-const hotdogs = getHotDogs()
-const ---- = getLocations()
-const ---- = getHotdogLocations()
-
-if(hotdog id = location id) then print only the hotdogs for that location 
-
-
-
-
-*/
+import {}
