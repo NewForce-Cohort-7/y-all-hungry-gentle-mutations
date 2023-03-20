@@ -25,9 +25,10 @@ const buildOrderListItem = (order) => {
             return dessert.id === order.dessertId
         }
     )
+    
     const foundHappyToy = happyToys.find(
-        (happytoy) => {
-            return happytoy.id === order.happyToyId
+        (toy) => {
+            return toy.id === order.toyId
         }
     )
 
