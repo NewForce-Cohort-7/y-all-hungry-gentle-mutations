@@ -13,7 +13,7 @@ document.addEventListener(
 
 export const Hotdogs = () => {
     let html = "<select name='hotdogs'><option value='menuChoice'>Select a hotdog</option>"
-
+// database.orderBuilder.locationId
     // Use .map() for converting objects to <li> elements
     const listItems = hotdogs.map(hotdog => {
         return `<option value="${hotdog.id}" /> ${hotdog.name}</option>`
@@ -27,3 +27,18 @@ export const Hotdogs = () => {
     html += "</select><br>"
     return html
 }
+
+/* 
+const hotdogs = getHotDogs()
+const ---- = getLocations()
+const ---- = getHotdogLocations()
+
+const filterHotdogsbyLocation = (hotdogs) => {
+    let hotdogsArray = []
+    for (const hotdog of hotdogs) {
+        if()
+    }
+}
+
+
+*/
