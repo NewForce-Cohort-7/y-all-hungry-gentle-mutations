@@ -13,7 +13,7 @@ document.addEventListener(
 
 export const Desserts = () => {
     let html = "<select name='dessert'><option value='menuChoice'>Select a dessert</option>"
-
+// database.orderBuilder.locationId
     const listItems = desserts.map(dessert => {
         return `<option value="${dessert.id}" /> ${dessert.name}</option>`
 

@@ -13,6 +13,10 @@ export const getDesserts = () => {
     return database.desserts.map(dessert => ({ ...dessert }))
 }
 
+export const getHappyToys = () => {
+    return database.happyToys.map(toy => ({ ...toy }))
+}
+
 export const getOrders = () => {
     return database.customOrders.map(order => ({...order}))
 }
@@ -42,6 +46,11 @@ export const setDesserts = (id) => {
 export const setLocations = (id) => {
     database.orderBuilder.locationId = id;
     updateLocation();
+}
+
+export const setHappyToys = (id) => {
+    database.orderBuilder.toyId = id;
+    updateToySelection();
 }
 
 // // setLocation export  
@@ -117,6 +126,30 @@ export const updateDessertSelection = () => {
             <h5 class="card-title">${dessertData.name}</h5>
             <p class="card-text">${dessertData.description}</p>
             <p class="card-text"><small class="text-muted">$${dessertData.price}</small></p>
+        </div>
+        </div>
+    </div>
+    </div>`;   
+}
+
+// happy toys
+export const updateToySelection = () => {
+    console.log(database.orderBuilder);
+
+    let orderToy = document.querySelector("span.happy-toys");
+    let toyData = database.happyToys.find((toy) => { return toy.id === database.orderBuilder.toyId });
+
+    orderToy.innerHTML = `
+    <div class="card mb-3 food-card" style="max-width: 540px;">
+    <div class="row g-0" background-color: >
+        <div class="col-md-4 food-card">
+        <img src="${toyData.img}" class="img-fluid rounded-start" alt="photo of selected dessert">
+        </div>
+        <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title">${toyData.name}</h5>
+            <p class="card-text">${toyData.description}</p>
+            <p class="card-text"><small class="text-muted">$${toyData.price}</small></p>
         </div>
         </div>
     </div>
