@@ -19,17 +19,28 @@ export const database = {
         { id: 7, name: "Water", img: 'https://m.media-amazon.com/images/I/81BeAomXzOL._SY445_.jpg', price: 1.00 }
     ],
     desserts: [
-        { id: 1, name: "[NO DESSERT]", price: 0, description: "You will not receive a dessert.", img: 'https://i.imgur.com/xeRzvBO.png' },
+        { id: 1, name: "[NO DESSERT]", description: "You will not receive a dessert.", img: 'https://i.imgur.com/xeRzvBO.png', price: 0 },
         { id: 2, name: "Banana Split", description: "Three different flavors of ice cream served between two banana halves, topped with whipped cream, fudge, and chopped peanuts", img: 'https://www.thespruceeats.com/thmb/3QatTcsVjKeDVCD-rIeUa4fSRAs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/perfect-banana-split-recipe-305712-hero-01-ef0482a539394da0b5ba64ade0c73b98.jpg', price: 5.00  },
         { id: 3, name: "Caramel Sundae", description: "Chocolate ice cream drizzled with caramel sauce", img: 'https://icecreamfromscratch.com/wp-content/uploads/2022/09/Caramel-Sundae-1.2-735x1103.jpg', price: 3.00 },
         { id: 4, name: "Hot Fudge Sundae", description: "Vanilla ice cream topped with our secret chocolate sauce", img: 'https://preppykitchen.com/wp-content/uploads/2021/04/Hot-Fudge-Sundae-Feature.jpg', price: 3.00 },
         { id: 5, name: "Fruit Salad", description: "Seasonal fruit salad (whipped topping optional)", img: 'https://veganinthefreezer.com/wp-content/uploads/2021/08/Summer-Fruit-Salad-17-720x480.jpg', price: 2.00 },
         { id: 6, name: "Soft Serve on a Cone", description: "Vanilla, chocolate, or strawberry soft serve icecream housed in a waffle cone", img: 'https://i.ebayimg.com/images/g/iGkAAOSwwSlgZG2W/s-l1600.jpg', price: 2.00 }
     ],
+    happyToys: [
+        { id: 1, name: "[NO HAPPY TOY]", description: "You will not receive a Happy Toy.", img: "https://i.imgur.com/xeRzvBO.png", price: 0 },
+        { id: 2, name: "Hungry Hungry Hotdog Man", description: "An action figure of our mascot, Hungry Hungry Hotdog Man", img: "https://i.ebayimg.com/images/g/NxkAAOSwTSdfiwGU/s-l500.jpg", price: 1.00 },
+        { id: 3, name: "Plush Hotdog", description: "An adorable mini-hotdog plushie", img: "https://cdn.shopify.com/s/files/1/0584/3841/products/polyester-yummy-world-franky-hotdog-10-plush-1.jpg", price: 1.00 },
+        { id: 4, name: "Best Friend's Hotdoggie", description: "A rubber hotdog toy for man's best friend", img: "https://www.imprintitems.com/userfiles/files/asi-media/7257638.jpg", price: 1.00 }
+    ],
     locations: [
         { id: 1, name: "Morgantown, WV", address: "13 High St, Morgantown, WV, 26505" },
         { id: 2, name: "Fairmont, WV", address: "7 Locust Ave, Fairmont, WV 26554" },
         { id: 3, name: "Charleston, WV", address: "800 Smith St, Charleston, WV 25301" }
+    ],
+    hotdogLocations : [
+        { id: 1, locationId: 1, hotdogId: 4 },
+        { id: 2, locationId: 1, hotdogId: 5 },
+        { id: 3, locationId: 3, hotdogId: 2 }
     ],
     customOrders: []
 }

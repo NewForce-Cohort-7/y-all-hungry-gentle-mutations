@@ -4,6 +4,7 @@ import { Desserts } from "./Desserts.js"
 import { Locations } from "./Locations.js"
 import { Orders } from "./Orders.js"
 import { addCustomOrder } from "./dataAccess.js"
+// import { HappyToys } from "./HappyToys.js" 
 
 document.addEventListener("click", (event) => {
     if(event.target.id === "orderButton") {
@@ -27,6 +28,7 @@ export const HHH = () => {
                 ${Hotdogs()}
                 ${Drinks()}
                 ${Desserts()} 
+
             <button id="orderButton">I'm Hungry! Make my order!!!</button>
             </section>
             <section class="col-sm-4 order">
@@ -34,6 +36,7 @@ export const HHH = () => {
                 <span class="hotdog"></span>
                 <span class="drink"></span>
                 <span class="dessert"></span>
+                <span class="happy-toys"></span>
                 ${Orders()} 
             </section>
         </div>
