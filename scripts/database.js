@@ -106,24 +106,24 @@ export const database = {
     dessertLocations : [
         {id: 1, locationId: 1, dessertId: 1 },
         {id: 2, locationId: 1, dessertId: 2 },
-        {id: 3, locationId: 1, dessertId: 3 }
+        {id: 3, locationId: 1, dessertId: 3 },
         {id: 4, locationId: 1, dessertId: 4 },
-        {id: 5, locationId: 2, dessertId: 5 },
-        {id: 6, locationId: 3, dessertId: 6 }
+        {id: 5, locationId: 1, dessertId: 5 },
+        {id: 6, locationId: 1, dessertId: 6 },
         {id: 7, locationId: 1, dessertId: 7 },
         {id: 8, locationId: 2, dessertId: 1 },
-        {id: 9, locationId: 3, dessertId: 2 }
-        {id: 10, locationId: 1, dessertId: 3 },
+        {id: 9, locationId: 2, dessertId: 2 },
+        {id: 10, locationId: 2, dessertId: 3 },
         {id: 11, locationId: 2, dessertId: 4 },
-        {id: 12, locationId: 3, dessertId: 5 }
-        {id: 13, locationId: 1, dessertId: 6 },
+        {id: 12, locationId: 2, dessertId: 5 },
+        {id: 13, locationId: 2, dessertId: 6 },
         {id: 14, locationId: 2, dessertId: 8 },
-        {id: 15, locationId: 3, dessertId: 1 }
-        {id: 16, locationId: 1, dessertId: 2 },
-        {id: 17, locationId: 2, dessertId: 3 },
-        {id: 18, locationId: 3, dessertId: 4 }
-        {id: 19, locationId: 1, dessertId: 5 },
-        {id: 20, locationId: 2, dessertId: 6 },
+        {id: 15, locationId: 3, dessertId: 1 },
+        {id: 16, locationId: 3, dessertId: 2 },
+        {id: 17, locationId: 3, dessertId: 3 },
+        {id: 18, locationId: 3, dessertId: 4 },
+        {id: 19, locationId: 3, dessertId: 5 },
+        {id: 20, locationId: 3, dessertId: 6 },
         {id: 21, locationId: 3, dessertId: 9 }
     ],
     customOrders: []
