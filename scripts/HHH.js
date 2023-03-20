@@ -17,8 +17,7 @@ export const HHH = () => {
         <div class="row justify-content-center">
             <section class="col-sm-12 main justify-content-center">
                 <img src="https://i.imgur.com/03pwa67.png" alt="Hungry Hungry Hotdogs Logo" width="300" height="250">
-                <h1>Hungry Hungry Hotdogs</h1>
-                <p>Choose a location to pick up your order</p>
+                <p class="location-sub">Choose a location to pick up your order</p>
                 ${Locations()}
                 <p><span class="locationName"></span></p>
             </section>

@@ -34,3 +34,11 @@ h2 {
 .food-card {
     background-color: #FFFAF2;
 }
+
+.img-fluid {
+    height: 100%;
+}
+
+.location-sub {
+    margin-top: 20px;
+}
