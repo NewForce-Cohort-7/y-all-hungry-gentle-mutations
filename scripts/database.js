@@ -17,16 +17,16 @@ export const database = {
         { id: 13, name: "Golden Capitol Dog", description: "A traditional WV-style hotdog with chili, slaw, mustard, diced onions, and topped in 14K edible gold leaf", img: 'https://i.imgur.com/ShYvGYm.jpg', price: 99.00 },
     ],
     drinks: [
-        { id: 1, name: "[NO DRINK]", img: 'https://i.imgur.com/xeRzvBO.png', price: 0 },
-        { id: 2, name: "Mountain Dew", img: 'https://www.meijer.com/content/dam/meijer/product/0001/20/0000/13/0001200000131_1200.png', price: 1.50 },
-        { id: 3, name: "Sprite", img: 'https://cdn.shopify.com/s/files/1/0088/8612/4606/products/chrome_YUAbrmX3em_466x466.png?v=1647897946', price: 1.50 },
-        { id: 4, name: "Coke", img: 'https://scene7.samsclub.com/is/image/samsclub/0004900002468_B?wid=400&hei=400', price: 1.50 },
-        { id: 5, name: "Sweet Tea", img: 'https://sugarspunrun.com/wp-content/uploads/2022/05/Easy-sweet-tea-recipe-4-of-6.jpg', price: 1.50 },
-        { id: 6, name: "Blackberry Lemonade", img: 'https://i0.wp.com/saygraceblog.com/wp-content/uploads/2016/06/Summer-Blackberry-Lemonade.jpg?w=667&ssl=1', price: 1.75 },
-        { id: 7, name: "Water", img: 'https://m.media-amazon.com/images/I/81BeAomXzOL._SY445_.jpg', price: 1.00 },
-        { id: 8, name: "Appalachian Appletini", img: 'https://amandascookin.com/wp-content/uploads/2020/04/appletini-cocktail-recipe-RC-600x600.jpg', price: 3.00},
-        { id: 9, name: "Bubble Bubble Trouble", img: 'https://www.sugarhero.com/wp-content/uploads/2020/10/witches-brew-halloween-punch-10.jpg', price: 4.00},
-        { id: 10, name: "The State Senator", img: 'https://creative-culinary.com/wp-content/uploads/blackberry-gin-sling-1.jpg', price: 3.50}
+        { id: 1, name: "[NO DRINK]", description: "", img: 'https://i.imgur.com/xeRzvBO.png', price: 0 },
+        { id: 2, name: "Mountain Dew", description: "", img: 'https://www.meijer.com/content/dam/meijer/product/0001/20/0000/13/0001200000131_1200.png', price: 1.50 },
+        { id: 3, name: "Sprite", description: "", img: 'https://cdn.shopify.com/s/files/1/0088/8612/4606/products/chrome_YUAbrmX3em_466x466.png?v=1647897946', price: 1.50 },
+        { id: 4, name: "Coke", description: "", img: 'https://scene7.samsclub.com/is/image/samsclub/0004900002468_B?wid=400&hei=400', price: 1.50 },
+        { id: 5, name: "Sweet Tea", description: "", img: 'https://sugarspunrun.com/wp-content/uploads/2022/05/Easy-sweet-tea-recipe-4-of-6.jpg', price: 1.50 },
+        { id: 6, name: "Blackberry Lemonade", description: "", img: 'https://i0.wp.com/saygraceblog.com/wp-content/uploads/2016/06/Summer-Blackberry-Lemonade.jpg?w=667&ssl=1', price: 1.75 },
+        { id: 7, name: "Water", description: "", img: 'https://m.media-amazon.com/images/I/81BeAomXzOL._SY445_.jpg', price: 1.00 },
+        { id: 8, name: "Appalachian Appletini", description: "A non-alcoholic cocktail made with our fizzy apple cider, lemon juice, and green apple syrup", img: 'https://amandascookin.com/wp-content/uploads/2020/04/appletini-cocktail-recipe-RC-600x600.jpg', price: 3.00},
+        { id: 9, name: "Bubble Bubble Trouble", description: "Fizzy apple cider with a colorful surprise!", img: 'https://www.sugarhero.com/wp-content/uploads/2020/10/witches-brew-halloween-punch-10.jpg', price: 4.00},
+        { id: 10, name: "The State Senator", description: "A non-alcoholic cocktail made with blackberry syrup and tarragon", img: 'https://creative-culinary.com/wp-content/uploads/blackberry-gin-sling-1.jpg', price: 3.50}
     ],
     desserts: [
         { id: 1, name: "[NO DESSERT]", description: "You will not receive a dessert.", img: 'https://i.imgur.com/xeRzvBO.png', price: 0 },
@@ -35,8 +35,8 @@ export const database = {
         { id: 4, name: "Hot Fudge Sundae", description: "Vanilla ice cream topped with our secret chocolate sauce", img: 'https://preppykitchen.com/wp-content/uploads/2021/04/Hot-Fudge-Sundae-Feature.jpg', price: 3.00 },
         { id: 5, name: "Fruit Salad", description: "Seasonal fruit salad (whipped topping optional)", img: 'https://veganinthefreezer.com/wp-content/uploads/2021/08/Summer-Fruit-Salad-17-720x480.jpg', price: 2.00 },
         { id: 6, name: "Soft Serve on a Cone", description: "Vanilla, chocolate, or strawberry soft serve icecream housed in a waffle cone", img: 'https://i.ebayimg.com/images/g/iGkAAOSwwSlgZG2W/s-l1600.jpg', price: 2.00},
-        { id: 7, name: "Mountaineer Mugcake", description: "brownie in souvenier mug!", img: 'https://www.shutterstock.com/image-vector/empty-placeholder-image-icon-design-600w-1366372628.jpg', price: 6.00},
-        { id: 8, name: "The Veggieman", description: "vegan meringue", img: 'https://nexttrip.info/up_load_files/779/photo04.jpg', price: 5.00},
+        { id: 7, name: "Mountaineer Mugcake", description: "Homemade chocolate and walnut brownie mugcake with hot chocolate icing and yellow and blue sprinkles. Comes with a Hungry Hungry Hotdogs souvenir mug!", img: 'https://www.shutterstock.com/image-vector/empty-placeholder-image-icon-design-600w-1366372628.jpg', price: 6.00},
+        { id: 8, name: "The Veggieman", description: "Vegan meringue topped with black licorice syrup and a strawberry cream", img: 'https://nexttrip.info/up_load_files/779/photo04.jpg', price: 5.00},
         { id: 9, name: "The Snowshoe", description: "Shaved ice topped with our fruit salad and honey", img: 'https://nexttrip.info/up_load_files/779/photo04.jpg', price: 5.00}
     ],
     happyToys: [
@@ -78,14 +78,53 @@ export const database = {
         { id: 25, locationId: 3, hotdogId: 13 },
     ],
     drinkLocations : [
-        { id: 1, locationId: 1, drinkId: 8 },
-        { id: 2, locationId: 2, drinkId: 9 },
-        { id: 3, locationId: 3, drinkId: 10 }
+        { id: 1, locationId: 1, drinkId: 1 },
+        { id: 2, locationId: 1, drinkId: 2 },
+        { id: 3, locationId: 1, drinkId: 3 },
+        { id: 4, locationId: 1, drinkId: 4 },
+        { id: 5, locationId: 1, drinkId: 5 },
+        { id: 6, locationId: 1, drinkId: 6 },
+        { id: 7, locationId: 1, drinkId: 7 },
+        { id: 8, locationId: 1, drinkId: 8 },
+        { id: 9, locationId: 2, drinkId: 1 },
+        { id: 10, locationId: 2, drinkId: 2 },
+        { id: 11, locationId: 2, drinkId: 3 },
+        { id: 12, locationId: 2, drinkId: 4 },
+        { id: 13, locationId: 2, drinkId: 5 },
+        { id: 14, locationId: 2, drinkId: 6 },
+        { id: 15, locationId: 2, drinkId: 7 },
+        { id: 16, locationId: 2, drinkId: 9 },
+        { id: 17, locationId: 3, drinkId: 1 },
+        { id: 18, locationId: 3, drinkId: 2 },
+        { id: 19, locationId: 3, drinkId: 3 },
+        { id: 20, locationId: 3, drinkId: 4 },
+        { id: 21, locationId: 3, drinkId: 5 },
+        { id: 22, locationId: 3, drinkId: 6 },
+        { id: 23, locationId: 3, drinkId: 7 },
+        { id: 24, locationId: 3, drinkId: 10 },
     ],
     dessertLocations : [
-        {id: 1, locationId: 1, dessertId: 7},
-        {id: 2, locationId: 2, dessertId: 8},
-        {id: 3, locationId: 3, dessertId: 9}
+        {id: 1, locationId: 1, dessertId: 1 },
+        {id: 2, locationId: 1, dessertId: 2 },
+        {id: 3, locationId: 1, dessertId: 3 }
+        {id: 4, locationId: 1, dessertId: 4 },
+        {id: 5, locationId: 2, dessertId: 5 },
+        {id: 6, locationId: 3, dessertId: 6 }
+        {id: 7, locationId: 1, dessertId: 7 },
+        {id: 8, locationId: 2, dessertId: 1 },
+        {id: 9, locationId: 3, dessertId: 2 }
+        {id: 10, locationId: 1, dessertId: 3 },
+        {id: 11, locationId: 2, dessertId: 4 },
+        {id: 12, locationId: 3, dessertId: 5 }
+        {id: 13, locationId: 1, dessertId: 6 },
+        {id: 14, locationId: 2, dessertId: 8 },
+        {id: 15, locationId: 3, dessertId: 1 }
+        {id: 16, locationId: 1, dessertId: 2 },
+        {id: 17, locationId: 2, dessertId: 3 },
+        {id: 18, locationId: 3, dessertId: 4 }
+        {id: 19, locationId: 1, dessertId: 5 },
+        {id: 20, locationId: 2, dessertId: 6 },
+        {id: 21, locationId: 3, dessertId: 9 }
     ],
     customOrders: []
 }
