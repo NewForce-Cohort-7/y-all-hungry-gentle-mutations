@@ -35,8 +35,8 @@ export const database = {
         { id: 4, name: "Hot Fudge Sundae", description: "Vanilla ice cream topped with our secret chocolate sauce", img: 'https://preppykitchen.com/wp-content/uploads/2021/04/Hot-Fudge-Sundae-Feature.jpg', price: 3.00 },
         { id: 5, name: "Fruit Salad", description: "Seasonal fruit salad (whipped topping optional)", img: 'https://veganinthefreezer.com/wp-content/uploads/2021/08/Summer-Fruit-Salad-17-720x480.jpg', price: 2.00 },
         { id: 6, name: "Soft Serve on a Cone", description: "Vanilla, chocolate, or strawberry soft serve icecream housed in a waffle cone", img: 'https://i.ebayimg.com/images/g/iGkAAOSwwSlgZG2W/s-l1600.jpg', price: 2.00},
-        { id: 7, name: "Mountaineer Mugcake", description: "Homemade chocolate and walnut brownie mugcake with hot chocolate icing and yellow and blue sprinkles. Comes with a Hungry Hungry Hotdogs souvenir mug!", img: 'https://www.shutterstock.com/image-vector/empty-placeholder-image-icon-design-600w-1366372628.jpg', price: 6.00},
-        { id: 8, name: "The Veggieman", description: "Vegan meringue topped with black licorice syrup and a strawberry cream", img: 'https://nexttrip.info/up_load_files/779/photo04.jpg', price: 5.00},
+        { id: 7, name: "Mountaineer Mugcake", description: "Homemade chocolate and walnut brownie mugcake with hot chocolate icing and yellow and blue sprinkles. Comes with a Hungry Hungry Hotdogs souvenir mug!", img: 'https://brooklynfarmgirl.com/wp-content/uploads/2013/11/Chocolate-Banana-Mug-Cake_8-768x1152.jpg', price: 6.00},
+        { id: 8, name: "The Veggieman", description: "Vegan meringue topped with black licorice syrup and a strawberry cream", img: 'https://static.wikia.nocookie.net/cryptidz/images/e/e0/Veggiemann.jpg', price: 5.00},
         { id: 9, name: "The Snowshoe", description: "Shaved ice topped with our fruit salad and honey", img: 'https://nexttrip.info/up_load_files/779/photo04.jpg', price: 5.00}
     ],
     happyToys: [
