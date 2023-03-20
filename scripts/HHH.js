@@ -28,7 +28,7 @@ export const HHH = () => {
                 ${Hotdogs()}
                 ${Drinks()}
                 ${Desserts()} 
-            <button id="orderButton">Create Custom Order</button>
+            <button id="orderButton">I'm Hungry! Make my order!!!</button>
             </section>
             <section class="col-sm-4 order">
                 <h2>Orders</h2>
