@@ -1,9 +1,10 @@
-import { getHotDogs, getDrinks, getDesserts, getOrders, getLocations } from "./dataAccess.js"
+import { getHotDogs, getDrinks, getDesserts, getOrders, getLocations, getHappyToys } from "./dataAccess.js"
 
 const hotdogs = getHotDogs()
 const drinks = getDrinks()
 const desserts = getDesserts()
 const locations = getLocations()
+const happyToys = getHappyToys()
 
 
 const buildOrderListItem = (order) => {
@@ -24,6 +25,11 @@ const buildOrderListItem = (order) => {
             return dessert.id === order.dessertId
         }
     )
+    const foundHappyToy = happyToys.find(
+        (happytoy) => {
+            return happytoy.id === order.happyToyId
+        }
+    )
 
     // const foundLocation = locations.find(
     //     (location) => {
@@ -39,8 +45,8 @@ const buildOrderListItem = (order) => {
     // }
 
     let totalCost = 0
-    if (foundHotdog && foundDrink && foundDessert) {
-        totalCost = foundHotdog.price + foundDrink.price + foundDessert.price
+    if (foundHotdog && foundDrink && foundDessert && foundHappyToy) {
+        totalCost = foundHotdog.price + foundDrink.price + foundDessert.price + foundHappyToy.price
     }
 
 
@@ -49,7 +55,7 @@ const buildOrderListItem = (order) => {
         currency: "USD"
     })
     return `<li>
-    <strong>Order #${order.id}:</strong> ${foundHotdog.name}, ${foundDrink.name}, ${foundDessert.name} at our <u>placeholder</u> location. <strong>Total:</strong> ${costString}
+    <strong>Order #${order.id}:</strong> ${foundHotdog.name}, ${foundDrink.name}, ${foundDessert.name}, ${foundHappyToy.name} at our <u>placeholder</u> location. <strong>Total:</strong> ${costString}
     </li>`
 }
 
