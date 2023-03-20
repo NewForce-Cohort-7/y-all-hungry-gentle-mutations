@@ -3,6 +3,7 @@ import { Drinks } from "./Drinks.js"
 import { Desserts } from "./Desserts.js"
 import { Locations } from "./Locations.js"
 import { Orders } from "./Orders.js"
+import {Toys} from "./HappyToys.js"
 import { addCustomOrder } from "./dataAccess.js"
 // import { HappyToys } from "./HappyToys.js" 
 
@@ -28,6 +29,7 @@ export const HHH = () => {
                 ${Hotdogs()}
                 ${Drinks()}
                 ${Desserts()} 
+                ${Toys()}
 
             <button id="orderButton">I'm Hungry! Make my order!!!</button>
             </section>
