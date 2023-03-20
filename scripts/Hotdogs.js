@@ -33,12 +33,9 @@ const hotdogs = getHotDogs()
 const ---- = getLocations()
 const ---- = getHotdogLocations()
 
-const filterHotdogsbyLocation = (hotdogs) => {
-    let hotdogsArray = []
-    for (const hotdog of hotdogs) {
-        if()
-    }
-}
+if(hotdog id = location id) then print only the hotdogs for that location 
+
+
 
 
 */
