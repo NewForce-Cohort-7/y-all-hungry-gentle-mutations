@@ -1,4 +1,4 @@
-import { getLocations, setLocations} from "./dataAccess.js"
+import { getLocations, setLocations } from "./dataAccess.js"
 
 const locations = getLocations()
 

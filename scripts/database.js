@@ -77,8 +77,8 @@ export const database = {
         { id: 24, locationId: 3, hotdogId: 12 },
         { id: 25, locationId: 3, hotdogId: 13 },
     ],
-    drinkLocations : [
-        { id: 1, locationId: 1, drinkId: 1 },
+    drinkLocations: [  // drinkStock?
+        { id: 1, locationId: 1, drinkId: 1 }, // add quantity
         { id: 2, locationId: 1, drinkId: 2 },
         { id: 3, locationId: 1, drinkId: 3 },
         { id: 4, locationId: 1, drinkId: 4 },
@@ -103,7 +103,7 @@ export const database = {
         { id: 23, locationId: 3, drinkId: 7 },
         { id: 24, locationId: 3, drinkId: 10 },
     ],
-    dessertLocations : [
+    dessertLocations: [
         {id: 1, locationId: 1, dessertId: 1 },
         {id: 2, locationId: 1, dessertId: 2 },
         {id: 3, locationId: 1, dessertId: 3 },
@@ -125,6 +125,17 @@ export const database = {
         {id: 19, locationId: 3, dessertId: 5 },
         {id: 20, locationId: 3, dessertId: 6 },
         {id: 21, locationId: 3, dessertId: 9 }
+    ],
+    happyToysLocations: [
+        { id: 1, locationId: 1, toyId: 1 },
+        { id: 2, locationId: 1, toyId: 2 },
+        { id: 3, locationId: 1, toyId: 3 },
+        { id: 4, locationId: 2, toyId: 1 },
+        { id: 5, locationId: 2, toyId: 2 },
+        { id: 6, locationId: 2, toyId: 3 },
+        { id: 7, locationId: 3, toyId: 1 },
+        { id: 8, locationId: 3, toyId: 2 },
+        { id: 9, locationId: 3, toyId: 3 }
     ],
     customOrders: []
 }
