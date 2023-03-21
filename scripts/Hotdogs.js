@@ -1,9 +1,6 @@
-import { getHotDogs, setHotDogs, addCustomOrder, getHotDogLocations } from "./dataAccess.js"
+import { getHotDogs, setHotDogs, getOrderBuilder, getHotdogLocations } from "./dataAccess.js"
 
 const hotdogs = getHotDogs()
-const hotdogIds = setHotDogs()
-const orders = addCustomOrder()
-const hotdogLocations = getHotDogLocations()
 
 document.addEventListener(
     "change",
@@ -15,15 +12,23 @@ document.addEventListener(
 )
 
 export const Hotdogs = () => {
-    let html = "<select name='hotdogs'><option value='menuChoice'>Select a hotdog</option>"
+    let html = "<select name='hotdog'><option value='menuChoice'>Select a hotdog</option>"
 
     const listItems = hotdogs.map(hotdog => {
-        return `<option value="${matchingHotdogs.id}" /> ${matchingHotdogs.name}</option>`
 
+    const HotdogLocation = getHotdogLocations() // dessert locations/stock
+    const Order = getOrderBuilder() // transient state
 
-    })
+    for (const hotdogObject of HotdogLocation) { // make a new array with just those objects - for loop/.map()/.find
+        if (Order.locationId === hotdogObject.locationId ) {  // need conditional to see if orderBuilder.locationId === dessertLocations.locationId
+            
+        if (hotdog.id === hotdogObject.hotdogId) { // another to loop through desserts & find dessert name that matches dessertId on dessertObject 
+                return `<option value="${hotdog.id}" /> ${hotdog.name}</option>` // print selected items
+            }
+        }   
+    }
+})
 
-    // Join all of the strings in the array into a single string
     html += listItems.join("")
 
     html += "</select><br>"
