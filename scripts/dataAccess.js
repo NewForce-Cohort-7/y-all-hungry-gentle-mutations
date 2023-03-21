@@ -98,6 +98,7 @@ export const updateHotDogSelection = () => {
         <div class="card-body">
             <h5 class="card-title">${hotdogData.name}</h5>
             <p class="card-text">${hotdogData.description}</p>
+            <p class="card-text">ONLY ${hotdogData.quantity} MORE AVAILABLE!</p>
             <p class="card-text"><small class="text-muted">$${hotdogData.price}</small></p>
         </div>
         </div>
@@ -123,7 +124,7 @@ export const updateDrinkSelection = () => {
         <div class="card-body">
             <h5 class="card-title">${drinkData.name}</h5>
             <p class="card-text">${drinkData.description}</p>
-            <p class=
+            <p class="card-text">ONLY ${drinkData.quantity} MORE AVAILABLE!</p>
             <p class="card-text"><small class="text-muted">$${drinkData.price}</small></p>
         </div>
         </div>
@@ -149,6 +150,7 @@ export const updateDessertSelection = () => {
         <div class="card-body">
             <h5 class="card-title">${dessertData.name}</h5>
             <p class="card-text">${dessertData.description}</p>
+            <p class="card-text">ONLY ${dessertData.quantity} MORE AVAILABLE!</p>
             <p class="card-text"><small class="text-muted">$${dessertData.price}</small></p>
         </div>
         </div>
@@ -173,6 +175,7 @@ export const updateToySelection = () => {
         <div class="card-body">
             <h5 class="card-title">${toyData.name}</h5>
             <p class="card-text">${toyData.description}</p>
+            <p class="card-text">ONLY ${toyData.quantity} MORE AVAILABLE!</p>
             <p class="card-text"><small class="text-muted">$${toyData.price}</small></p>
         </div>
         </div>
