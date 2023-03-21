@@ -12,7 +12,7 @@ document.addEventListener(
 )
 
 export const Hotdogs = () => {
-    let html = "<select name='hotdog'><option value='menuChoice'>Select a hotdog</option>"
+    let html = "<select name='hotdogs'><option value='menuChoice'>Select a hotdog</option>"
 
     const listItems = hotdogs.map(hotdog => {
 
@@ -31,6 +31,6 @@ export const Hotdogs = () => {
 
     html += listItems.join("")
 
-    html += "</select><br>"
+    html += "</select></br>"
     return html
 }
