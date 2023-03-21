@@ -32,11 +32,11 @@ const buildOrderListItem = (order) => {
         }
     )
 
-    // const foundLocation = locations.find(
-    //     (location) => {
-    //         return location.id === order.locationId
-    //     }
-    // )
+    const foundLocation = locations.find(
+        (location) => {
+            return location.id === order.locationId
+        }
+    )
 
 
     // if (foundLocation === undefined) {
@@ -55,15 +55,12 @@ const buildOrderListItem = (order) => {
         currency: "USD"
     })
     return `<li>
-    <strong>Order #${order.id}:</strong> ${foundHotdog.name}, ${foundDrink.name}, ${foundDessert.name}, ${foundHappyToy.name} at our <u>placeholder</u> location. <strong>Total:</strong> ${costString}
+    <strong>Order #${order.id}:</strong> ${foundHotdog.name}, ${foundDrink.name}, ${foundDessert.name}, ${foundHappyToy.name} at our ${foundLocation.name} location. <strong>Total:</strong> ${costString}
     </li>`
 }
 
 export const Orders = () => {
-    /*
-        Can you explain why the state variable has to be inside
-        the component function for Orders, but not the others?
-    */
+
     const orders = getOrders()
 
     let html = "<ul>"
