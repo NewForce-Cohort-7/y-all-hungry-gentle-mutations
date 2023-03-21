@@ -1,8 +1,5 @@
 import { getDrinks, setDrinks, getOrderBuilder, getDrinkLocations } from "./dataAccess.js"
 
-
-
-
 const drinks = getDrinks()
 
 document.addEventListener(
