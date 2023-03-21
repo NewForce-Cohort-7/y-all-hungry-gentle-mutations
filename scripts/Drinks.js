@@ -1,4 +1,7 @@
-import { getDrinks, setDrinks } from "./dataAccess.js"
+import { getDrinks, setDrinks, getOrderBuilder, getDessertLocations, getDrinkLocations } from "./dataAccess.js"
+
+
+
 
 const drinks = getDrinks()
 
@@ -15,10 +18,19 @@ export const Drinks = () => {
     let html = "<select name='drink'><option value='menuChoice'>Select a drink</option>"
 
     const listItems = drinks.map(drink => {
-        return `<option value="${drink.id}" /> ${drink.name}</option>`
 
+    const DrinkLoc = getDrinkLocations()
+    const Order = getOrderBuilder()
+        
+    for (const drinkObject of DrinkLoc) {
+        if (Order.locationId === drinkObject.locationId) {
 
-    })
+        if (drink.id === drinkObject.drinkId) {
+            return `<option value="${drink.id}" /> ${drink.name}</option>`
+            }
+        }
+    }
+})
 
     html += listItems.join("")
 
