@@ -26,9 +26,6 @@ export const getLocations = () => {
     return database.locations.map(location => ({ ...location }))
 }
 
-export const getHotDogLocations = () => {
-    return database.hotdogLocations.map(hotdogLocation => ({...hotdogLocation}))
-}
 
 // set* functions 
 export const setHotDogs = (id) => {
