@@ -1,4 +1,4 @@
-import { getHappyToys, setHappyToys } from "./dataAccess.js"
+import { getHappyToys, setHappyToys, getOrderBuilder, getToyLocations } from "./dataAccess.js"
 
 const toys = getHappyToys()
 
@@ -15,8 +15,19 @@ export const Toys = () => {
     let html = "<select name='toy'><option value='menuChoice'>Select a toy</option>"
 
     const listItems = toys.map(toy => {
-        return `<option value="${toy.id}" /> ${toy.name}</option>`
-    })
+
+    const toyLoc = getToyLocations()
+    const Order = getOrderBuilder()
+    
+    for (const happyToyObject of toyLoc) {
+        if (Order.locationId === happyToyObject.locationId) {
+
+        if (toy.id === happyToyObject.toyId) {
+            return `<option value="${toy.id}" /> ${toy.name}</option>`
+        }
+    }
+  }
+ })
 
     html += listItems.join("")
 
