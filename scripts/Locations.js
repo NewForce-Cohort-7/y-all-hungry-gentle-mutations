@@ -1,4 +1,4 @@
-import { getLocations, setLocations } from "./dataAccess.js"
+import { getLocations, setLocations, getOrderBuilder } from "./dataAccess.js"
 
 const locations = getLocations()
 
@@ -15,9 +15,14 @@ export const Locations = () => {
     let html = "<select name='location'><option value='menuChoice'>Select a location</option>"
 
     const listItems = locations.map(location => {
-        return `<option value="${location.id}" /> ${location.name}</option>`
 
+        const currentLocation = getOrderBuilder()
 
+        if (currentLocation.locationId == location.id) {
+            return `<option value="${location.id}" selected /> ${location.name}</option>` 
+        } else {
+            return `<option value="${location.id}" /> ${location.name}</option>`
+    }
     })
 
     html += listItems.join("")

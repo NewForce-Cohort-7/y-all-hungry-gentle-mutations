@@ -48,8 +48,7 @@ const buildOrderListItem = (order) => {
     let totalCost = 0
     if (foundHotdog && foundDrink && foundDessert && foundHappyToy) {
         totalCost = foundHotdog.price + foundDrink.price + foundDessert.price + foundHappyToy.price
-    }
-
+    } 
 
     const costString = totalCost.toLocaleString("en-US", {
         style: "currency",
