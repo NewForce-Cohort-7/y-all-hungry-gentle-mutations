@@ -17,16 +17,16 @@ export const database = {
         { id: 13, name: "Golden Capitol Dog", description: "A traditional WV-style hotdog with chili, slaw, mustard, diced onions, and topped in 14K edible gold leaf", img: 'https://i.imgur.com/ShYvGYm.jpg', price: 99.00 },
     ],
     drinks: [
-        { id: 1, name: "[NO DRINK]", description: "", img: 'https://i.imgur.com/xeRzvBO.png', price: 0 },
-        { id: 2, name: "Mountain Dew", description: "", img: 'https://www.meijer.com/content/dam/meijer/product/0001/20/0000/13/0001200000131_1200.png', price: 1.50 },
-        { id: 3, name: "Sprite", description: "", img: 'https://cdn.shopify.com/s/files/1/0088/8612/4606/products/chrome_YUAbrmX3em_466x466.png?v=1647897946', price: 1.50 },
-        { id: 4, name: "Coke", description: "", img: 'https://scene7.samsclub.com/is/image/samsclub/0004900002468_B?wid=400&hei=400', price: 1.50 },
-        { id: 5, name: "Sweet Tea", description: "", img: 'https://sugarspunrun.com/wp-content/uploads/2022/05/Easy-sweet-tea-recipe-4-of-6.jpg', price: 1.50 },
-        { id: 6, name: "Blackberry Lemonade", description: "", img: 'https://i0.wp.com/saygraceblog.com/wp-content/uploads/2016/06/Summer-Blackberry-Lemonade.jpg?w=667&ssl=1', price: 1.75 },
-        { id: 7, name: "Water", description: "", img: 'https://m.media-amazon.com/images/I/81BeAomXzOL._SY445_.jpg', price: 1.00 },
-        { id: 8, name: "Appalachian Appletini", description: "A non-alcoholic cocktail made with our fizzy apple cider, lemon juice, and green apple syrup", img: 'https://amandascookin.com/wp-content/uploads/2020/04/appletini-cocktail-recipe-RC-600x600.jpg', price: 3.00},
-        { id: 9, name: "Bubble Bubble Trouble", description: "Fizzy apple cider with a colorful surprise!", img: 'https://www.sugarhero.com/wp-content/uploads/2020/10/witches-brew-halloween-punch-10.jpg', price: 4.00},
-        { id: 10, name: "The State Senator", description: "A non-alcoholic cocktail made with blackberry syrup and tarragon", img: 'https://creative-culinary.com/wp-content/uploads/blackberry-gin-sling-1.jpg', price: 3.50}
+        { quantity: 2, id: 1, name: "[NO DRINK]", description: "", img: 'https://i.imgur.com/xeRzvBO.png', price: 0 },
+        { quantity: 2, id: 2, name: "Mountain Dew", description: "", img: 'https://www.meijer.com/content/dam/meijer/product/0001/20/0000/13/0001200000131_1200.png', price: 1.50 },
+        { quantity: 2, id: 3, name: "Sprite", description: "", img: 'https://cdn.shopify.com/s/files/1/0088/8612/4606/products/chrome_YUAbrmX3em_466x466.png?v=1647897946', price: 1.50 },
+        { quantity: 2, id: 4, name: "Coke", description: "", img: 'https://scene7.samsclub.com/is/image/samsclub/0004900002468_B?wid=400&hei=400', price: 1.50 },
+        { quantity: 2, id: 5, name: "Sweet Tea", description: "", img: 'https://sugarspunrun.com/wp-content/uploads/2022/05/Easy-sweet-tea-recipe-4-of-6.jpg', price: 1.50 },
+        { quantity: 2, id: 6, name: "Blackberry Lemonade", description: "", img: 'https://i0.wp.com/saygraceblog.com/wp-content/uploads/2016/06/Summer-Blackberry-Lemonade.jpg?w=667&ssl=1', price: 1.75 },
+        { quantity: 2, id: 7, name: "Water", description: "", img: 'https://m.media-amazon.com/images/I/81BeAomXzOL._SY445_.jpg', price: 1.00 },
+        { quantity: 2, id: 8, name: "Appalachian Appletini", description: "A non-alcoholic cocktail made with our fizzy apple cider, lemon juice, and green apple syrup", img: 'https://amandascookin.com/wp-content/uploads/2020/04/appletini-cocktail-recipe-RC-600x600.jpg', price: 3.00},
+        { quantity: 2, id: 9, name: "Bubble Bubble Trouble", description: "Fizzy apple cider with a colorful surprise!", img: 'https://www.sugarhero.com/wp-content/uploads/2020/10/witches-brew-halloween-punch-10.jpg', price: 4.00},
+        { quantity: 2, id: 10, name: "The State Senator", description: "A non-alcoholic cocktail made with blackberry syrup and tarragon", img: 'https://creative-culinary.com/wp-content/uploads/blackberry-gin-sling-1.jpg', price: 3.50}
     ],
     desserts: [
         { id: 1, name: "[NO DESSERT]", description: "You will not receive a dessert.", img: 'https://i.imgur.com/xeRzvBO.png', price: 0 },
