@@ -5,6 +5,7 @@ import { Locations } from "./Locations.js"
 import { Orders } from "./Orders.js"
 import { Toys } from "./HappyToys.js"
 import { addCustomOrder } from "./dataAccess.js"
+import { Subtotal } from "./Subtotal.js"
 
 
 document.addEventListener("click", (event) => {
@@ -30,7 +31,7 @@ export const HHH = () => {
                 ${Drinks()}
                 ${Desserts()} 
                 ${Toys()}
-
+                ${Subtotal()}
             <button id="orderButton">I'm Hungry! Make my order!!!</button>
             </section>
             <section class="col-sm-4 order">

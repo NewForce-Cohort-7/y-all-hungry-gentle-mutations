@@ -1,13 +1,12 @@
-import { getHotDogs, getDrinks, getDesserts, getOrders, getLocations, getHappyToys } from "./dataAccess.js"
+import { getHotDogs, getDrinks, getDesserts, getOrders, getHappyToys } from "./dataAccess.js"
 
 const hotdogs = getHotDogs()
 const drinks = getDrinks()
 const desserts = getDesserts()
-const locations = getLocations()
 const happyToys = getHappyToys()
 
 
-const buildOrderListItem = (order) => {
+const buildSubtotal = (order) => {
     const foundHotdog = hotdogs.find(
         (hotdog) => {
             return hotdog.id === order.hotdogId
@@ -32,19 +31,6 @@ const buildOrderListItem = (order) => {
         }
     )
 
-    const foundLocation = locations.find(
-        (location) => {
-            return location.id === order.locationId
-        }
-    )
-
-
-    // if (foundLocation === undefined) {
-    //     window.alert("Please choose your location")
-    //     location.reload()
-    //     return
-    // }
-
     let totalCost = 0
     if (foundHotdog && foundDrink && foundDessert && foundHappyToy) {
         totalCost = foundHotdog.price + foundDrink.price + foundDessert.price + foundHappyToy.price
@@ -55,17 +41,17 @@ const buildOrderListItem = (order) => {
         currency: "USD"
     })
     return `<li>
-    <strong>Order #${order.id}:</strong> ${foundHotdog.name}, ${foundDrink.name}, ${foundDessert.name}, ${foundHappyToy.name} at our ${foundLocation.name} location. <strong>Total:</strong> ${costString}
+   ${costString}
     </li>`
 }
 
-export const Orders = () => {
+export const Subtotal = () => {
 
     const orders = getOrders()
 
     let html = "<ul>"
 
-    const listItems = orders.map(buildOrderListItem)
+    const listItems = orders.map(buildSubtotal)
 
     html += listItems.join("")
     html += "</ul>"
