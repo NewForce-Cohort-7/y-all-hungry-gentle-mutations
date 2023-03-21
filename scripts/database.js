@@ -133,9 +133,10 @@ export const database = {
         { id: 4, locationId: 2, toyId: 1 },
         { id: 5, locationId: 2, toyId: 2 },
         { id: 6, locationId: 2, toyId: 3 },
-        { id: 7, locationId: 3, toyId: 1 },
-        { id: 8, locationId: 3, toyId: 2 },
-        { id: 9, locationId: 3, toyId: 3 }
+        { id: 7, locationId: 2, toyId: 4 },
+        { id: 8, locationId: 3, toyId: 1 },
+        { id: 9, locationId: 3, toyId: 2 },
+        { id: 9, locationId: 3, toyId: 4 }
     ],
     customOrders: []
 }
