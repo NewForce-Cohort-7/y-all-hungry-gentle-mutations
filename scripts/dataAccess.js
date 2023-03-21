@@ -21,16 +21,36 @@ export const getOrders = () => {
     return database.customOrders.map(order => ({...order}))
 }
 
+export const getOrderBuilder = () => {
+    return database.orderBuilder
+}
+
+// bridge tables
+export const getHotdogLocations = () => {
+    return database.hotdogLocations.map(hotdogloc => ({...hotdogloc}))
+}
+
+export const getDrinkLocations = () => {
+    return database.drinkLocations.map(drinkloc => ({...drinkloc}))
+}
+
+export const getDessertLocations = () => {
+    return database.dessertLocations.map(dessertloc => ({...dessertloc}))
+}
+
+export const getToyLocations = () => {
+    return database.happyToysLocations.map(toyloc => ({...toyloc}))
+}
+
 // getLocation export 
 export const getLocations = () => {
     return database.locations.map(location => ({ ...location }))
 }
 
-
 // set* functions 
 export const setHotDogs = (id) => {
     database.orderBuilder.hotdogId = id;
-    updateHotDogSelection();
+    updateHotDogSelection();  
 }
 
 export const setDrinks = (id) => {
@@ -46,6 +66,7 @@ export const setDesserts = (id) => {
 export const setLocations = (id) => {
     database.orderBuilder.locationId = id;
     updateLocation();
+    document.dispatchEvent(new CustomEvent("stateChanged"))
 }
 
 export const setHappyToys = (id) => {

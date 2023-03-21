@@ -1,4 +1,7 @@
-import { getDesserts, setDesserts } from "./dataAccess.js"
+import { getDesserts, setDesserts, getOrderBuilder, getDessertLocations } from "./dataAccess.js"
+// access to transient state - orderBuilder
+// access to the bridge table - getDessertLocations
+// access to the desserts table - getDesserts
 
 const desserts = getDesserts()
 
@@ -13,12 +16,21 @@ document.addEventListener(
 
 export const Desserts = () => {
     let html = "<select name='dessert'><option value='menuChoice'>Select a dessert</option>"
-// database.orderBuilder.locationId
+
     const listItems = desserts.map(dessert => {
-        return `<option value="${dessert.id}" /> ${dessert.name}</option>`
 
+    const DessertLoc = getDessertLocations() // dessert locations/stock
+    const Order = getOrderBuilder() // transient state
 
-    })
+    for (const dessertObject of DessertLoc) { // make a new array with just those objects - for loop/.map()/.find
+        if (Order.locationId === dessertObject.locationId ) {  // need conditional to see if orderBuilder.locationId === dessertLocations.locationId
+            
+        if (dessert.id === dessertObject.dessertId) { // another to loop through desserts & find dessert name that matches dessertId on dessertObject 
+                return `<option value="${dessert.id}" /> ${dessert.name}</option>` // print selected items
+            }
+        }   
+    }
+})
 
     html += listItems.join("")
 

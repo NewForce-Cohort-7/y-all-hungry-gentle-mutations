@@ -3,9 +3,9 @@ import { Drinks } from "./Drinks.js"
 import { Desserts } from "./Desserts.js"
 import { Locations } from "./Locations.js"
 import { Orders } from "./Orders.js"
-import {Toys} from "./HappyToys.js"
+import { Toys } from "./HappyToys.js"
 import { addCustomOrder } from "./dataAccess.js"
-// import { HappyToys } from "./HappyToys.js" 
+
 
 document.addEventListener("click", (event) => {
     if(event.target.id === "orderButton") {
