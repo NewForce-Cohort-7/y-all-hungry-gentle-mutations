@@ -14,7 +14,6 @@ document.addEventListener(
 export const Hotdogs = () => {
     let html = "<select name='hotdogs'><option value='menuChoice'>Select a hotdog</option>"
 
-    // Use .map() for converting objects to <li> elements
     const listItems = hotdogs.map(hotdog => {
         return `<option value="${hotdog.id}" /> ${hotdog.name}</option>`
 
