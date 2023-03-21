@@ -65,8 +65,9 @@ export const setDesserts = (id) => {
 
 export const setLocations = (id) => {
     database.orderBuilder.locationId = id;
-    updateLocation();
     document.dispatchEvent(new CustomEvent("stateChanged"))
+    updateLocation();
+
 }
 
 export const setHappyToys = (id) => {
