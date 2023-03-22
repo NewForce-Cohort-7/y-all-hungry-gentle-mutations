@@ -7,6 +7,7 @@ import { Toys } from "./HappyToys.js"
 import { addCustomOrder } from "./dataAccess.js"
 
 
+
 document.addEventListener("click", (event) => {
     if(event.target.id === "orderButton") {
         addCustomOrder();
@@ -30,7 +31,7 @@ export const HHH = () => {
                 ${Drinks()}
                 ${Desserts()} 
                 ${Toys()}
-                
+                <div class="subtotal"></div>
             <button id="orderButton">I'm Hungry! Make my order!!!</button>
             </section>
             <section class="col-sm-4 order">
