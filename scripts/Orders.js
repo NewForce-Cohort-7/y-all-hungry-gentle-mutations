@@ -37,17 +37,11 @@ const buildOrderListItem = (order) => {
             return location.id === order.locationId
         }
     )
-
-
-    // if (foundLocation === undefined) {
-    //     window.alert("Please choose your location")
-    //     location.reload()
-    //     return
-    // }
-
+    
+    let salesTax = .06 // WV sales tax = 6%
     let totalCost = 0
     if (foundHotdog && foundDrink && foundDessert && foundHappyToy) {
-        totalCost = foundHotdog.price + foundDrink.price + foundDessert.price + foundHappyToy.price
+        totalCost = (foundHotdog.price + foundDrink.price + foundDessert.price + foundHappyToy.price) * (1 + salesTax)
     } 
 
     const costString = totalCost.toLocaleString("en-US", {
