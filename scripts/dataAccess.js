@@ -80,7 +80,7 @@ export const getToyLocations = () => {
     return database.happyToysLocations.map(toyloc => ({...toyloc}))
 }
 
-// SELECTIONS 
+// MENU SELECTIONS 
 // hot doggo selections
 export const updateHotDogSelection = () => {
     console.log(database.orderBuilder);
