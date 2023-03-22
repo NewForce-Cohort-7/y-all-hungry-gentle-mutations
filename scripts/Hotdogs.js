@@ -1,4 +1,4 @@
-import { getHotDogs, setHotDogs, getOrderBuilder, getHotdogLocations } from "./dataAccess.js"
+import { getHotDogs, setHotDogs, getOrderBuilder, getHotdogLocations, getOrders } from "./dataAccess.js"
 
 const hotdogs = getHotDogs()
 
@@ -18,11 +18,29 @@ export const Hotdogs = () => {
 
     const HotdogLocation = getHotdogLocations() // dessert locations/stock
     const Order = getOrderBuilder() // transient state
+    const currentDisplayedOrders = getOrders()
+    let hotDogsSold = []
+
         for (const hotdogObject of HotdogLocation) {
+        
         if (Order.locationId === hotdogObject.locationId ) {  // need conditional to see if orderBuilder.locationId === dessertLocations.locationId
-            
+                       
+        //the array method
+            // hotDogsSold = currentDisplayedOrders.filter(numberOfHotDogsSold => numberOfHotDogsSold.locationId === hotdogObject.locationId && numberOfHotDogsSold.hotdogId === hotdogObject.hotdogId)
+
+        //the long hand form of the array method
+        const numberOfHotDogsSold = () => {
+            for (const singleDisplayedOrder of currentDisplayedOrders){
+                if(singleDisplayedOrder.locationId === hotdogObject.locationId && singleDisplayedOrder.hotdogId === hotdogObject.hotdogId){
+                    hotDogsSold.push(singleDisplayedOrder)
+                }
+            }
+        } 
+        
+        numberOfHotDogsSold()
+
         if (hotdog.id === hotdogObject.hotdogId) { // another to loop through desserts & find dessert name that matches dessertId on dessertObject 
-                return `<option value="${hotdog.id}" /> ${hotdog.name} (${hotdogObject.quantity} in stock)</option>` // print selected items
+                return `<option value="${hotdog.id}" /> ${hotdog.name} (${hotdogObject.quantity - hotDogsSold.length} in stock)</option>` // print selected items
             }
         } 
     
