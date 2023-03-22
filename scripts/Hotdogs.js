@@ -18,14 +18,14 @@ export const Hotdogs = () => {
 
     const HotdogLocation = getHotdogLocations() // dessert locations/stock
     const Order = getOrderBuilder() // transient state
-
-    for (const hotdogObject of HotdogLocation) { // make a new array with just those objects - for loop/.map()/.find
+        for (const hotdogObject of HotdogLocation) {
         if (Order.locationId === hotdogObject.locationId ) {  // need conditional to see if orderBuilder.locationId === dessertLocations.locationId
             
         if (hotdog.id === hotdogObject.hotdogId) { // another to loop through desserts & find dessert name that matches dessertId on dessertObject 
-                return `<option value="${hotdog.id}" /> ${hotdog.name}</option>` // print selected items
+                return `<option value="${hotdog.id}" /> ${hotdog.name} (${hotdogObject.quantity} in stock)</option>` // print selected items
             }
-        }   
+        } 
+    
     }
 })
 
