@@ -25,8 +25,8 @@ export const Hotdogs = () => {
         
         if (Order.locationId === hotdogObject.locationId ) {  // need conditional to see if orderBuilder.locationId === dessertLocations.locationId
                        
-        //the array method
-            // hotDogsSold = currentDisplayedOrders.filter(numberOfHotDogsSold => numberOfHotDogsSold.locationId === hotdogObject.locationId && numberOfHotDogsSold.hotdogId === hotdogObject.hotdogId)
+        // the array method
+        //     hotDogsSold = currentDisplayedOrders.filter(numberOfHotDogsSold => numberOfHotDogsSold.locationId === hotdogObject.locationId && numberOfHotDogsSold.hotdogId === hotdogObject.hotdogId)
 
         //the long hand form of the array method
         const numberOfHotDogsSold = () => {

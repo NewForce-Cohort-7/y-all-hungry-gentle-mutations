@@ -25,27 +25,11 @@ export const getOrderBuilder = () => {
     return database.orderBuilder
 }
 
-// bridge tables
-export const getHotdogLocations = () => {
-    return database.hotdogLocations.map(hotdogloc => ({...hotdogloc}))
-}
-
-export const getDrinkLocations = () => {
-    return database.drinkLocations.map(drinkloc => ({...drinkloc}))
-}
-
-export const getDessertLocations = () => {
-    return database.dessertLocations.map(dessertloc => ({...dessertloc}))
-}
-
-export const getToyLocations = () => {
-    return database.happyToysLocations.map(toyloc => ({...toyloc}))
-}
-
 // getLocation export 
 export const getLocations = () => {
     return database.locations.map(location => ({ ...location }))
 }
+
 
 // set* functions 
 export const setHotDogs = (id) => {
@@ -79,7 +63,25 @@ export const setLocations = (id) => {
 
 }
 
-// hot doggos
+// BRIDGE TABLES
+export const getHotdogLocations = () => {
+    return database.hotdogLocations.map(hotdogloc => ({...hotdogloc}))
+}
+
+export const getDrinkLocations = () => {
+    return database.drinkLocations.map(drinkloc => ({...drinkloc}))
+}
+
+export const getDessertLocations = () => {
+    return database.dessertLocations.map(dessertloc => ({...dessertloc}))
+}
+
+export const getToyLocations = () => {
+    return database.happyToysLocations.map(toyloc => ({...toyloc}))
+}
+
+// SELECTIONS 
+// hot doggo selections
 export const updateHotDogSelection = () => {
     console.log(database.orderBuilder);
     
@@ -111,7 +113,7 @@ export const updateHotDogSelection = () => {
     </div>`;
 }
 
-// drinks 
+// drinks selection 
 export const updateDrinkSelection = () => {
     console.log(database.orderBuilder);
 
@@ -143,7 +145,7 @@ export const updateDrinkSelection = () => {
     </div>`;
 }
 
-// dessert 
+// dessert selection 
 export const updateDessertSelection = () => {
     console.log(database.orderBuilder);
 
@@ -175,7 +177,7 @@ export const updateDessertSelection = () => {
     </div>`;   
 }
 
-// happy toys
+// happy toys selection 
 export const updateToySelection = () => {
     console.log(database.orderBuilder);
 
@@ -207,6 +209,7 @@ export const updateToySelection = () => {
     </div>`;   
 }
 
+// LOCATION 
 // location selection 
 export const updateLocation = () => {
     console.log(database.orderBuilder);
@@ -217,6 +220,8 @@ export const updateLocation = () => {
     locationOption.innerHTML = `You have selected our <strong>${locationData.name}</strong> foodtruck located at </br> ${locationData.address}.`  
 }
 
+// SUBTOTAL 
+// subtotal functionality 
 export const updateSubtotal = () => {
     console.log(database.orderBuilder);
 
