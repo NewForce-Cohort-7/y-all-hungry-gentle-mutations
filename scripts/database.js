@@ -7,12 +7,12 @@ export const database = {
         { id: 4, name: "Corn Dawg", description: "Corndog style vegan hotdog wrapped in a syrupy batter for an all-in-one breakfast!", img: 'https://alittleinsanity.com/wp-content/uploads/2017/04/Gluten-Free-Vegan-Corndog-Recipe-Instagram.jpg', price: 5.00},
         { id: 5, name: "Bratwurst Dog", description: "Spicy in-house made bratwurst topped with onions and slaw in a brioche bun", img: 'https://assets.marthastewart.com/styles/wmax-750/d35/wisconsin-beer-brats-0617-102941317/wisconsin-beer-brats-0617-102941317_horiz.jpg?itok=yhnfWLqJ', price: 5.00 },
         { id: 6, name: "Corn Dog", description: "Our take on your favorite state fair food with your choice of toppings", img: 'https://twoplaidaprons.com/wp-content/uploads/2022/04/side-shot-Korean-corn-dog-thumbnail-500x500.jpg', price: 3.00 },
-        { id: 7, name: "Bogey Dog", description: "Grilled all beef footlong hot dog with mustard, smoked chili, homemade slaw, and onion", img: 'https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/a460fa2c-0383-4cf5-8d6a-694b6d0f0bc8.jpg', price: 9.00 },
+        { id: 7, name: "Bogey Dog", description: "Grilled all beef footlong hot dog with mustard, smoked chili, homemade slaw, and onion", img: 'https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/a460fa2c-0383-4cf5-8d6a-694b6d0f0bc8.jpg', price: 9.25 },
         { id: 8, name: "Tijuana Dog", description: "Bacon-wrapped footlong hot dog topped with avocade, jalapenos, fresh crema, and pico de gallo", img: 'https://i0.wp.com/grubdelite.com/wp-content/uploads/2018/06/attachment-1-100.jpeg?fit=2727%2C2517&ssl=1', price: 10.00 },
         { id: 9, name: "Veg Out Dawg", description: "Plant-based hotdog topped with grilled onions, peppers, mustard, and ketchup", img: 'https://images.immediate.co.uk/production/volatile/sites/30/2021/07/Tropical-vegan-hot-dogs-1b1e00e.jpg', price: 4.50 },
         { id: 10, name: "Canadian Dog", description: "A hotdog and bun topped with fries and cheese, soaked in gravy", img: 'https://i.imgur.com/pSdfxGR.png', price: 8.00 },
         { id: 11, name: "Mothman Dog", description: "Topped with blue cheese, buffalo sauce, and jalapenos", img: 'https://i.imgur.com/wvYH0Il.jpg', price: 12.00  },
-        { id: 12, name: "Governor J.J.'s Baby Dog", description: "English breakfast sausage with baked beans, mushrooms, tomatoes, bacon bits, and topped with a fried egg", img: 'https://i.imgur.com/k6rUHt2.jpg', price: 9.00 },
+        { id: 12, name: "Governor J.J.'s Baby Dog", description: "English breakfast sausage with baked beans, mushrooms, tomatoes, bacon bits, and topped with a fried egg", img: 'https://i.imgur.com/k6rUHt2.jpg', price: 9.50 },
         { id: 13, name: "Golden Capitol Dog", description: "A traditional WV-style hotdog with chili, slaw, mustard, diced onions, and topped in 14K edible gold leaf", img: 'https://i.imgur.com/ShYvGYm.jpg', price: 99.00 },
     ],
     drinks: [
@@ -32,7 +32,7 @@ export const database = {
         { id: 2, name: "Banana Split", description: "Three different flavors of ice cream served between two banana halves, topped with whipped cream, fudge, and chopped peanuts", img: 'https://www.thespruceeats.com/thmb/3QatTcsVjKeDVCD-rIeUa4fSRAs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/perfect-banana-split-recipe-305712-hero-01-ef0482a539394da0b5ba64ade0c73b98.jpg', price: 5.00  },
         { id: 3, name: "Caramel Sundae", description: "Chocolate ice cream drizzled with caramel sauce", img: 'https://icecreamfromscratch.com/wp-content/uploads/2022/09/Caramel-Sundae-1.2-735x1103.jpg', price: 3.00 },
         { id: 4, name: "Hot Fudge Sundae", description: "Vanilla ice cream topped with our secret chocolate sauce", img: 'https://preppykitchen.com/wp-content/uploads/2021/04/Hot-Fudge-Sundae-Feature.jpg', price: 3.00 },
-        { id: 5, name: "Fruit Salad", description: "Seasonal fruit salad (whipped topping optional)", img: 'https://veganinthefreezer.com/wp-content/uploads/2021/08/Summer-Fruit-Salad-17-720x480.jpg', price: 2.00 },
+        { id: 5, name: "Fruit Salad", description: "Seasonal fruit salad (whipped topping optional)", img: 'https://veganinthefreezer.com/wp-content/uploads/2021/08/Summer-Fruit-Salad-17-720x480.jpg', price: 2.50 },
         { id: 6, name: "Soft Serve on a Cone", description: "Vanilla, chocolate, or strawberry soft serve icecream housed in a waffle cone", img: 'https://i.ebayimg.com/images/g/iGkAAOSwwSlgZG2W/s-l1600.jpg', price: 2.00},
         { id: 7, name: "Mountaineer Mugcake", description: "Homemade chocolate and walnut brownie mugcake with hot chocolate icing and yellow and blue sprinkles. Comes with a Hungry Hungry Hotdogs souvenir mug!", img: 'https://brooklynfarmgirl.com/wp-content/uploads/2013/11/Chocolate-Banana-Mug-Cake_8-768x1152.jpg', price: 6.00},
         { id: 8, name: "The Veggieman", description: "Vegan meringue topped with black licorice syrup and a strawberry cream", img: 'https://static.wikia.nocookie.net/cryptidz/images/e/e0/Veggiemann.jpg', price: 5.00},
@@ -76,8 +76,8 @@ export const database = {
         { id: 24, locationId: 3, hotdogId: 12, quantity: 55, },
         { id: 25, locationId: 3, hotdogId: 13, quantity: 28 }
     ],
-    drinkLocations: [  // drinkStock?
-        { id: 1, locationId: 1, drinkId: 1, quantity: 100 }, // add quantity
+    drinkLocations: [ 
+        { id: 1, locationId: 1, drinkId: 1, quantity: 100 }, 
         { id: 2, locationId: 1, drinkId: 2, quantity: 89 },
         { id: 3, locationId: 1, drinkId: 3, quantity: 76 },
         { id: 4, locationId: 1, drinkId: 4, quantity: 89 },
