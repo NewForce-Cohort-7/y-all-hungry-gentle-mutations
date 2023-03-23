@@ -24,7 +24,7 @@ export const Toys = () => {
     for (const happyToyObject of toyLoc) {
         if (Order.locationId === happyToyObject.locationId) {
 
-            toysSold = currentDisplayedOrders.filter(numberOfToysSold => numberOfToysSold.locationId === HappyToyObject.locationId && numberOfToysSold.toyId === HappyToyObject.toyId)
+            toysSold = currentDisplayedOrders.filter(numberOfToysSold => numberOfToysSold.locationId === happyToyObject.locationId && numberOfToysSold.toyId === happyToyObject.toyId)
 
         if (toy.id === happyToyObject.toyId) {
             return `<option value="${toy.id}" /> ${toy.name} (${happyToyObject.quantity - toysSold.length} in stock)</option>`
