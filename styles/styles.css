@@ -26,6 +26,11 @@ h2 {
     text-align: center;
 }
 
+.order {
+    height: 400px;
+    overflow-y: scroll;
+}
+
 #orderButton { 
     background-color: #C4260C;
     color: rgb(255, 255, 255);
