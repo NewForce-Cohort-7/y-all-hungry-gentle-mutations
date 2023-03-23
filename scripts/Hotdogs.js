@@ -24,23 +24,28 @@ export const Hotdogs = () => {
         for (const hotdogObject of HotdogLocation) {
         
         if (Order.locationId === hotdogObject.locationId ) {  // need conditional to see if orderBuilder.locationId === dessertLocations.locationId
-                       
-        // the array method
-            hotDogsSold = currentDisplayedOrders.filter(numberOfHotDogsSold => numberOfHotDogsSold.locationId === hotdogObject.locationId && numberOfHotDogsSold.hotdogId === hotdogObject.hotdogId)
+                        
+        // hotDogsSold = currentDisplayedOrders.filter(numberOfHotDogsSold => numberOfHotDogsSold.locationId === hotdogObject.locationId && numberOfHotDogsSold.hotdogId === hotdogObject.hotdogId)
 
-        // //the long hand form of the array method - this does not fully work right now. It keeps deducting rom the hotdog select AND every item listed after it.
-        // const numberOfHotDogsSold = () => {
-        //     for (const singleDisplayedOrder of currentDisplayedOrders){
-        //         if(singleDisplayedOrder.locationId === hotdogObject.locationId && singleDisplayedOrder.hotdogId === hotdogObject.hotdogId){
-        //             hotDogsSold.push(singleDisplayedOrder)
-        //         }
-        //     }
-        // }
+        // the long hand form of the array method
+        const numberOfHotDogsSold = () => {
+            for (const singleDisplayedOrder of currentDisplayedOrders){
+                if(singleDisplayedOrder.locationId === hotdogObject.locationId && singleDisplayedOrder.hotdogId === hotdogObject.hotdogId){
+                    hotDogsSold.push(singleDisplayedOrder)
+                }
+            }
+        } 
         
-        // numberOfHotDogsSold()
+         // numberOfHotDogsSold()
 
-        if (hotdog.id === hotdogObject.hotdogId) { // another to loop through desserts & find dessert name that matches dessertId on dessertObject 
-                return `<option value="${hotdog.id}" /> ${hotdog.name} (${hotdogObject.quantity - hotDogsSold.length} in stock)</option>` // print selected items
+        if (hotdog.id === hotdogObject.hotdogId ) { // another to loop through desserts & find dessert name that matches dessertId on dessertObject 
+            const counter = []
+            for (const taco of hotDogsSold){
+                if(taco.hotdogId === hotdog.id){
+                    counter.push(taco)
+                }
+            }
+                return `<option value="${hotdog.id}" > ${hotdog.name} (${hotdogObject.quantity - counter.length} in stock)</option>` // print selected items
             }
         } 
     

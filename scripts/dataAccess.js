@@ -105,7 +105,7 @@ export const updateHotDogSelection = () => {
         <div class="col-md-8">
         <div class="card-body">
             <h5 class="card-title">${hotdogData.name}</h5>
-            <p class="card-text">${hotdogData.description}</p>
+            <p class="card-text ">${hotdogData.description}</p>
             <p class="card-text"><small class="text-muted">${costString}</small></p>
         </div>
         </div>
