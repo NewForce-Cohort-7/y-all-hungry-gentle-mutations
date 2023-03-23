@@ -28,7 +28,7 @@ export const Hotdogs = () => {
         // the array method
             hotDogsSold = currentDisplayedOrders.filter(numberOfHotDogsSold => numberOfHotDogsSold.locationId === hotdogObject.locationId && numberOfHotDogsSold.hotdogId === hotdogObject.hotdogId)
 
-        // //the long hand form of the array method
+        // //the long hand form of the array method - this does not fully work right now. It keeps deducting rom the hotdog select AND every item listed after it.
         // const numberOfHotDogsSold = () => {
         //     for (const singleDisplayedOrder of currentDisplayedOrders){
         //         if(singleDisplayedOrder.locationId === hotdogObject.locationId && singleDisplayedOrder.hotdogId === hotdogObject.hotdogId){
