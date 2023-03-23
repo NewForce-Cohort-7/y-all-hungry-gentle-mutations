@@ -1,4 +1,4 @@
-import { getHappyToys, setHappyToys, getOrderBuilder, getToyLocations } from "./dataAccess.js"
+import { getHappyToys, setHappyToys, getOrderBuilder, getToyLocations, getOrders } from "./dataAccess.js"
 
 const toys = getHappyToys()
 
@@ -18,12 +18,16 @@ export const Toys = () => {
 
     const toyLoc = getToyLocations()
     const Order = getOrderBuilder()
+    const currentDisplayedOrders = getOrders()
+    let toysSold = []
     
     for (const happyToyObject of toyLoc) {
         if (Order.locationId === happyToyObject.locationId) {
 
+            toysSold = currentDisplayedOrders.filter(numberOfToysSold => numberOfToysSold.locationId === toyObject.locationId && numberOfToysSold.toyId === toyObject.toyId)
+
         if (toy.id === happyToyObject.toyId) {
-            return `<option value="${toy.id}" /> ${toy.name}</option>`
+            return `<option value="${toy.id}" /> ${toy.name} (${toyObject.quantity - toysSold.length} in stock)</option>`
         }
     }
   }
