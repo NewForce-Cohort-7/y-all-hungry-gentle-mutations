@@ -1,4 +1,4 @@
-import { getDrinks, setDrinks, getOrderBuilder, getDrinkLocations } from "./dataAccess.js"
+import { getDrinks, setDrinks, getOrderBuilder, getDrinkLocations, getOrders } from "./dataAccess.js"
 
 const drinks = getDrinks()
 
@@ -18,12 +18,29 @@ export const Drinks = () => {
 
     const DrinkLoc = getDrinkLocations()
     const Order = getOrderBuilder()
+    const currentDisplayedOrders = getOrders()
+    let drinksSold = []
         
     for (const drinkObject of DrinkLoc) {
-        if (Order.locationId === drinkObject.locationId) {
+        
+    if (Order.locationId === drinkObject.locationId) {
+
+        // the array method
+        drinksSold = currentDisplayedOrders.filter(numberOfDrinksSold => numberOfDrinksSold.locationId === drinkObject.locationId && numberOfDrinksSold.drinkId === drinkObject.drinkId)
+        
+        
+        // the long hand form
+        // const numberOfDrinksSold = () => {
+        //     for (const singleDisplayedOrder of currentDisplayedOrders){
+        //         if(singleDisplayedOrder.locationId === drinkObject.locationId && singleDisplayedOrder.drinkId === drinkObject.drinkId){
+        //             drinksSold.push(singleDisplayedOrder)
+        //         }
+        //     }
+        // } 
+        // numberOfDrinksSold()
 
         if (drink.id === drinkObject.drinkId) {
-            return `<option value="${drink.id}" /> ${drink.name}</option>`
+            return `<option value="${drink.id}" /> ${drink.name} (${drinkObject.quantity - drinksSold.length} in stock)</option>`
             }
         }
     }
